@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+}
+body{
+    background-image: url("/img/background.jpg");
+    background-size: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+nav{
+    background:linear-gradient(70deg, rgba(120, 161, 248, 0.938),rgba(188, 121, 252, 0.979));
+}
+nav ul{
+    list-style: none;    
+    text-align: center;
+    text-decoration: none;
+}
+nav li{
+    display: inline-block;
+}
+nav a{
+    text-decoration: none;
+    padding:20px 105px 20px 105px ;
+    color: black;
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul li:hover{ 
+    background-color: rgba(235, 125, 85, 0.473);
+}
+
+
+
+main{
+    background-color: rgba(146, 177, 174, 0.897);
+    overflow: hidden;
+    margin: 0px 50px 0px 50px ;
+}
+
+.europa{
+    text-align: center;
+    font-size: 50px;
+    text-shadow: -2px -1px 3px #fff;
+}
+
+.parrafo1{
+    font-size:25px ;
+    margin: 50px 20px 0px 20px ;
+}
+
+.imagenmapa{
+    margin-top: 50px;
+}
+
+.parrafo2{
+    font-size:25px ;
+    margin: 50px 20px 0px 20px ;
+}
+
+.video{
+    margin-top: 50px;
+}
+
+
+
+
+.textotabla{
+    font-size: 45px;
+    margin-top: 50px;
+    text-align: center;
+    text-shadow: -2px -1px 3px #fff;
+}
+.tabla{
+    font-size: 30px;
+    border-color: black;
+    width:800px;
+}
+.tbpaises{
+    background-color: goldenrod;
+}
+
+.tbcapitales{
+    background-color:goldenrod ;
+}
+
+tr{
+    background-color: darkgrey;
+}
+
+.mapadeeuropa{
+    font-size: 60px;
+    margin-top: 50px;    
+    text-align: center;
+    text-shadow: -2px -1px 3px #fff;
+}
+
+.mapa{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    ;
+}
+
+.pie{
+    background-color: rgba(0, 0, 0, 0.973);
+    margin: 0px 50px 0px 50px;
+}
+
+.nombre{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 50px 0px 20px 0px;
+    font-weight: bold;  
+}
+
+.correo{
+    color: #fff;
+    text-align: right;
+    font-size: 25px;
+}
