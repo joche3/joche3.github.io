@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Pacifico&display=swap');
 
 * {
     margin: 0;
@@ -7,136 +7,218 @@
 body {
     background-image: url("/img/background.jpg");
     background-size: 100%;
-    font-family: 'Oleo Script', cursive;
+    font-family: 'Pacifico', cursive;
     cursor: url(/img/cursor.png),auto;
 }
 
-nav {
-    background: linear-gradient(70deg, rgba(120, 161, 248, 0.938), rgba(188, 121, 252, 0.979));
 
-}
 
-nav ul {
-    list-style: none;
+
+.barra{ 
+    background:linear-gradient(60deg,rgba(143, 61, 61, 0.904), rgba(146, 83, 165, 0.897) );
     text-align: center;
-    text-decoration: none;
+}
+/* ESTILOS GENERALES */
+.barra  ul{
+    list-style: none ;
+    padding: 0;
+
 }
 
-nav li {
-    display: inline-block;
+.barra li{
+    line-height: 80px;
+    position: relative;
 }
 
-nav a {
+.barra li ul{
+    position: absolute;
+}
+
+.barra a{
     text-decoration: none;
-    padding: 20px 105px 20px 105px;
-    color: black;
+    color:black;
     display: block;
-    font-weight: bold;
+    padding:0px 70px 0px 70px;
+
+}
+
+.barra li:hover{
+    background-color: rgba(102, 54, 54, 0.774);
+    transition: 0.5s;
+
+}
+
+
+
+
+.barra li ul{
+    display: none;
+}
+
+.barra li:hover ul{
+    display:block;
+}
+
+
+
+
+
+
+/* ESTILOS PRIMER NIVEL */
+nav > ul{
+    display: table;
+    width: 100%;
+}
+
+nav > ul > li{
+    float: left;
+
+}
+
+
+
+
+
+
+
+/* ESTILO SEGUNDO NIVEL */
+
+nav li li{
+    background: rgba(18, 175, 136, 0.822);
+    width: 108%;
+}
+
+nav > ul > li > ul{
+    top:100%
+}
+
+
+/* =============================================================================
+=============================================================================
+============================================================================= */
+
+
+/* CONTENIDO DE LA WEB */
+
+main{
+    background-color: rgba(128, 128, 128, 0.788);
+    margin: 0px 50px 0px 50px;
+    
+}
+
+main .contenido1 h1{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+    text-shadow: -2px 2px 2px white;
+}
+main .contenido1{
+    display: table;
+}
+
+main .imgmundo {
+    width: 200px;
+    float: left;
+    margin: 20px 25px 10px 25px;
+}
+
+main .contenido1 .texto1{
+    margin-top: 20px;
+    font-size: 20px;
+    margin: 0px 30px 0px 0px;
+}
+
+main .contenido1 .texto2{
+    font-size: 24px;
+    margin: 130px 100px 0px 100px;
+    border-top: 4px dashed rgb(58, 58, 58);
+    border-bottom:4px dashed rgb(58, 58, 58) ;
+    
+}
+
+main .contenido1 .video{
+    margin:  50px 0px 0px 59px;
+}
+
+/* 
+=======================================================================
+============================================================
+============================================================= */
+
+
+/* TABLA */
+
+.tabla{
+    width: 800px;
+    margin: 60px 0px 60px 0px ;
+    background-color: rgba(100, 148, 237, 0.74);
+    border-collapse:collapse;
     font-size: 18px;
 }
 
-nav ul li:hover {
-    background-color: rgba(235, 125, 85, 0.473);
-    transition: all 0.5s;
+.tabla caption{
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgba(100, 83, 83, 0.493);
+    text-shadow: -2px 2px 2px white;
+
 }
 
 
-
-
-main {
-    background-color: rgba(146, 177, 174, 0.897);
-    overflow: hidden;
-    margin: 0px 50px 0px 50px;
+.tabla thead{
+    background-color: rgb(190, 158, 97);
 }
 
-.europa {
+.tabla td{
+    border: 3px solid black;
+}
+
+/* 
+=======================================================================
+============================================================
+============================================================= */
+
+
+/* MAPA */
+
+
+.titulomapa{
     text-align: center;
-    font-size: 50px;
-    text-shadow: -2px -1px 3px #fff;
-}
-
-.parrafo1 {
-    font-size: 25px;
-    margin: 50px 20px 0px 20px;
-}
-
-.imagenmapa {
-    margin-top: 50px;
-}
-
-.parrafo2 {
-    font-size: 25px;
-    margin: 50px 20px 0px 20px;
-}
-
-.video {
-    margin-top: 50px;
-}
-
-
-
-
-.textotabla {
-    font-size: 45px;
-    margin-top: 50px;
-    text-align: center;
-    text-shadow: -2px -1px 3px #fff;
-}
-
-.tabla {
-    font-size: 30px;
-    border-color: black;
-    width: 800px;
-}
-
-.tbpaises {
-    background-color: goldenrod;
-}
-
-.tbcapitales {
-    background-color: goldenrod;
-}
-
-tr {
-    background-color: darkgrey;
-}
-
-.mapadeeuropa {
     font-size: 60px;
-    margin-top: 50px;
-    text-align: center;
-    text-shadow: -2px -1px 3px #fff;
+    text-shadow: -2px 2px 2px white;
+    margin-bottom: 40px;
 }
 
-.mapa {
-    margin-top: 50px;
+.mapa{
     margin-bottom: 50px;
 }
 
+/* 
+=======================================================================
+============================================================
+============================================================= */
 
-.pie {
-    background-color: rgba(0, 0, 0, 0.973);
-    margin: 0px 50px 0px 50px;
+
+/* PIE DE PAGINA */
+
+.pie{
+    background-color: black;
+    color: white;
+    margin:0px 50px 0px 50px;
 }
 
-.nombre {
-    color: #fff;
-    font-size: 30px;
+
+.pie .nombre{
+    font-size:40px;
+    padding: 50px 0px 50px 0px;
     text-align: center;
-    padding: 50px 0px 20px 0px;
-    font-weight: bold;
 }
 
-.correo {
-    color: #fff;
+.pie address{
     text-align: right;
-    font-size: 25px;
-
 }
 
-.facebook{
-    float: right;
-    width: 20px;
-    padding: 0px 10px 0px 10px;
-
+.pie .facebook {
+    float:right ;
+    width: 25px;
+    margin:0px 20px 0px 20px;
 }

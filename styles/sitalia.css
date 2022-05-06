@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url("/img/background.jpg");
+    background-size: 100%;
+    font-family: 'Pacifico', cursive;
+    cursor: url(/img/cursor.png),auto;
+}
+
+
+
+
+.barra{ 
+    background:linear-gradient(60deg,rgba(143, 61, 61, 0.904), rgba(146, 83, 165, 0.897) );
+    text-align: center;
+}
+/* ESTILOS GENERALES */
+.barra  ul{
+    list-style: none ;
+    padding: 0;
+
+}
+
+.barra li{
+    line-height: 80px;
+    position: relative;
+}
+
+.barra li ul{
+    position: absolute;
+}
+
+.barra a{
+    text-decoration: none;
+    color:black;
+    display: block;
+    padding:0px 70px 0px 70px;
+
+}
+
+.barra li:hover{
+    background-color: rgba(102, 54, 54, 0.774);
+    transition: 0.5s;
+
+}
+
+
+
+
+.barra li ul{
+    display: none;
+}
+
+.barra li:hover ul{
+    display:block;
+}
+
+
+
+
+
+
+/* ESTILOS PRIMER NIVEL */
+nav > ul{
+    display: table;
+    width: 100%;
+}
+
+nav > ul > li{
+    float: left;
+
+}
+
+
+
+
+
+
+
+/* ESTILO SEGUNDO NIVEL */
+
+nav li li{
+    background: rgba(18, 175, 136, 0.822);
+    width: 108%;
+}
+
+nav > ul > li > ul{
+    top:100%
+}
+
+
+/* =============================================================================
+=============================================================================
+============================================================================= */
+
+
+/* CONTENIDO DE LA WEB */
+
+.contenido1{
+    background:linear-gradient(60deg,rgba(58, 67, 153, 0.322), rgba(255, 255, 255, 0.233) ,rgba(143, 58, 58, 322));
+    margin:0px 60px 0px 60px;
+}
+
+.contenido1 h1{
+    text-align: center;
+    text-shadow: -2px 2px 2px white;
+    font-size: 60px;
+}
+.contenido1 img{
+    width: 240px;
+    float: right;
+    margin:0px 40px 0px 40px ;
+}
+
+.contenido1 p{
+    margin: 0px 50px 0px 50px ;
+    font-size: 23px;
+    padding-bottom: 20px;
+}
+
+
+/* =============================================================================
+=============================================================================
+============================================================================= */
+
+
+/* img */
+
+.tituloimg{
+    text-align: center;
+    font-size: 40px;
+    margin: 70px 0px 70px 0px;
+}
+
+
+.contenedorimagen{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px 0px 50px 0px;
+}
+
+
+.img1{
+    width: 300px;
+    border: 4px solid black;
+    margin: 0px 50px 0px 50px;
+    pointer-events: painted;
+}
+
+.img2{
+    width: 300px ;
+    border: 4px solid black;
+    margin: 0px 50px 0px 50px;
+}
+
+
+.img3{
+    width: 300px;
+    border: 4px solid black;
+    margin: 0px 50px 0px 50px;
+}
+
+/* =============================================================================
+=============================================================================
+============================================================================= */
+
+
+/* Pie de Pagina*/
+
+
+.pie{
+    background-color: black;
+    color: white;
+    margin:0px 50px 0px 50px;
+}
+
+
+.pie .nombre{
+    font-size:40px;
+    padding: 50px 0px 50px 0px;
+    text-align: center;
+}
+
+.pie address{
+    text-align: right;
+}
+
+.pie .facebook {
+    float:right ;
+    width: 25px;
+    margin:0px 20px 0px 20px;
+}
