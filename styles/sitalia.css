@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("/img/background.jpg");
+    background-image: url("/img/italia0000.jpg");
     background-size: 100%;
     font-family: 'Pacifico', cursive;
     cursor: url(/img/cursor.png),auto;
@@ -109,7 +109,6 @@ main{
 
 .contenido1{
     background:linear-gradient(60deg,rgba(58, 67, 153, 0.322), rgba(255, 255, 255, 0.233) ,rgba(143, 58, 58, 322));
-    margin:0px 60px 0px 60px;
 }
 
 .contenido1 h1{
@@ -141,6 +140,8 @@ main{
     text-align: center;
     font-size: 40px;
     margin: 70px 0px 70px 0px;
+    color: white;
+    text-shadow:-7px -4px 3px #000100;
 }
 
 

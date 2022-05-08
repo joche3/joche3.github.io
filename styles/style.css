@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("/img/background.jpg");
+    background-image: url("/img/Francias0000.jpg");
     background-size: 100%;
     font-family: 'Pacifico', cursive;
     cursor: url(/img/cursor.png),auto;
@@ -135,8 +135,9 @@ main .contenido1 h1{
     text-align: center;
     margin-top: 30px;
     font-size: 40px;
-    text-shadow: -5px -3px 2px rgb(44, 27, 2);
-    color: rgb(165, 93, 26);
+    text-shadow: -5px -3px 2px rgb(201, 201, 201);
+    color: rgb(0, 0, 0);
+    perspective: 300deg;
 }
 main .contenido1{
     display: table;

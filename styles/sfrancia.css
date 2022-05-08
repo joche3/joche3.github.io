@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("/img/background.jpg");
+    background-image: url("/img/francia0000.jpg");
     background-size: 100%;
     font-family: 'Pacifico', cursive;
     cursor: url(/img/cursor.png),auto;
@@ -101,12 +101,12 @@ nav > ul > li > ul{
 
 /* CONTENIDO DE LA WEB */
 main{
-    padding: 70px;
+    padding-top: 70px;
 }
 
 .contenido1{
     background:linear-gradient(60deg,rgba(58, 67, 153, 0.322), rgba(255, 255, 255, 0.233) ,rgba(143, 58, 58, 322));
-    margin:0px 60px 0px 60px;
+
 }
 
 .contenido1 h1{
@@ -137,6 +137,8 @@ main{
     text-align: center;
     font-size: 40px;
     margin: 70px 0px 70px 0px;
+    color: aliceblue;
+    text-shadow: -6px 5px 3px black;
 }
 
 
@@ -147,12 +149,14 @@ main{
     margin: 0px 0px 50px 0px;
 }
 
+.contenerdorimagen img{
+    position: relative;
+}
 
 .img1{
     width: 300px;
     border: 4px solid black;
     margin: 0px 50px 0px 50px;
-    pointer-events: painted;
 }
 
 .img2{
@@ -167,6 +171,7 @@ main{
     border: 4px solid black;
     margin: 0px 50px 0px 50px;
 }
+
 
 /* =============================================================================
 =============================================================================

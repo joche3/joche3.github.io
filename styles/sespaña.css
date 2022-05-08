@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("/img/background.jpg");
+    background-image: url("/img/España.jpg");
     background-size: 100%;
     font-family: 'Pacifico', cursive;
     cursor: url(/img/cursor.png),auto;
@@ -102,13 +102,12 @@ nav > ul > li > ul{
 
 /* CONTENIDO DE LA WEB */
 main{
-    padding: 80px;
+    padding-top: 80px;
 }
 
 
 .contenido1{
     background:linear-gradient(60deg,rgba(153, 58, 58, 0.733), rgba(214, 226, 46, 0.267) ,rgba(153, 58, 58, 0.733));
-    margin:0px 60px 0px 60px;
 }
 
 .contenido1 h1{
@@ -140,6 +139,8 @@ main{
     text-align: center;
     font-size: 40px;
     margin: 70px 0px 70px 0px;
+    color: white;
+    text-shadow: -6px 6px 3px #000100;
 }
 
 
