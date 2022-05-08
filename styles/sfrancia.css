@@ -16,7 +16,8 @@ body {
 
 .barra{ 
     background:linear-gradient(60deg,rgba(143, 61, 61, 0.904), rgba(146, 83, 165, 0.897) );
-    text-align: center;
+    position: fixed;
+    width: 100%;
 }
 /* ESTILOS GENERALES */
 .barra  ul{
@@ -36,10 +37,10 @@ body {
 
 .barra a{
     text-decoration: none;
-    color:black;
+    color:#000100;
     display: block;
     padding:0px 70px 0px 70px;
-
+    font-weight: bold;
 }
 
 .barra li:hover{
@@ -99,6 +100,9 @@ nav > ul > li > ul{
 
 
 /* CONTENIDO DE LA WEB */
+main{
+    padding: 70px;
+}
 
 .contenido1{
     background:linear-gradient(60deg,rgba(58, 67, 153, 0.322), rgba(255, 255, 255, 0.233) ,rgba(143, 58, 58, 322));
