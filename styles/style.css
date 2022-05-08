@@ -137,7 +137,7 @@ main .contenido1 h1{
     font-size: 40px;
     text-shadow: -5px -3px 2px rgb(201, 201, 201);
     color: rgb(0, 0, 0);
-    perspective: 300deg;
+    
 }
 main .contenido1{
     display: table;
