@@ -147,11 +147,9 @@ main{
     flex-direction: row;
     justify-content: center;
     margin: 0px 0px 50px 0px;
+
 }
 
-.contenerdorimagen img{
-    position: relative;
-}
 
 .img1{
     width: 300px;
@@ -168,9 +166,44 @@ main{
 
 .img3{
     width: 300px;
+    height: 200px;
     border: 4px solid black;
     margin: 0px 50px 0px 50px;
 }
+
+
+
+
+.contparis h1{
+    text-align: center;
+    text-shadow: -1px 1px 6px white;
+    color: rgb(27, 1, 70);
+}
+
+
+
+
+.contmarsella h1{
+    text-align: center;
+    text-shadow: -1px 1px 6px white;
+    color: rgb(27, 1, 70);
+}
+
+
+
+
+.contlyon h1{
+    text-align: center;
+    text-shadow: -1px 1px 6px white;
+    color: rgb(27, 1, 70);
+}
+
+
+
+
+
+
+
 
 
 /* =============================================================================
