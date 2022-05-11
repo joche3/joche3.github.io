@@ -107,7 +107,7 @@ main{
 
 
 .contenido1{
-    background:linear-gradient(60deg,rgba(153, 58, 58, 0.733), rgba(214, 226, 46, 0.267) ,rgba(153, 58, 58, 0.733));
+    background:linear-gradient(0deg,rgba(153, 58, 58, 0.733), rgba(214, 226, 46, 0.267) ,rgba(153, 58, 58, 0.733));
 }
 
 .contenido1 h1{
