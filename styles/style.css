@@ -30,7 +30,7 @@ nav  ul{
 }
 
 nav li{
-    line-height: 80px;
+    line-height: 60px;
     position: relative;
 }
 
@@ -43,7 +43,7 @@ nav a{
     color:#000100;
     display: block;
     padding:0px 70px 0px 70px;
-    font-weight: bold;
+    font-size: 15px;
 
 }
 

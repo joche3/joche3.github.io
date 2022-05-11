@@ -28,7 +28,7 @@ body {
 }
 
 .barra li{
-    line-height: 80px;
+    line-height: 60px;
     position: relative;
 }
 
@@ -41,6 +41,7 @@ body {
     color:black;
     display: block;
     padding:0px 70px 0px 70px;
+    font-size: 15px;
 
 }
 
