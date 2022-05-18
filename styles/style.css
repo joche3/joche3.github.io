@@ -1,14 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Pacifico&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Press+Start+2P&family=Turret+Road&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Nova+Mono&family=Press+Start+2P&family=Turret+Road&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Nova+Mono&family=Press+Start+2P&family=Roboto+Mono&family=Turret+Road&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-image: url("/img/Francias0000.jpg");
+    background-image: url("/img/ra60000.jpg");
     background-size: 100%;
     background-attachment: fixed;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Roboto Mono', monospace;
     cursor: url(/img/cursor.png),auto;
 
 }
@@ -21,6 +32,7 @@ body {
 nav{ 
     position: fixed;
     width: 100%;
+    font-family: 'PT Sans', sans-serif;s
 }
 
 nav  ul{
@@ -40,15 +52,18 @@ nav li ul{
 
 nav a{
     text-decoration: none;
-    color:#000100;
+    color:#faf2d8;
+    text-shadow: -2px 1px 10px rgb(0, 0, 0);
     display: block;
     padding:0px 70px 0px 70px;
-    font-size: 15px;
+    font-size: 18px;
+    font-weight:;
+
 
 }
 
 nav a:hover{
-    background-color: rgba(102, 54, 54, 0.774);
+    background-color: rgb(63, 62, 62);
     transition: 0.5s;
 }
 
@@ -70,20 +85,36 @@ nav li:hover ul{
 
 /* ESTILOS PRIMER NIVEL */
 nav > ul{
-    background:linear-gradient(60deg,rgba(143, 61, 61, 0.904), rgba(146, 83, 165, 0.897) );
+    background:linear-gradient(50deg,rgb(30, 101, 167), rgb(143, 85, 158),rgb(187, 141, 73),rgb(187, 141, 73));
     display: table;
     width: 100%;
+    background-size: 500%;
+    animation:  animado 6s infinite;
+}
+
+@keyframes animado {
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
 }
 
 nav > ul > li{
-    float: left;
+    float: right;
 }
 
 /* ESTILO SEGUNDO NIVEL */
 
 nav li li{
-    background: rgba(18, 175, 136, 0.822);
-    width: 108%;
+    background: rgb(41, 41, 41);
+    width: 99%;
 }
 
 nav > ul > li > ul{
@@ -93,9 +124,23 @@ nav > ul > li > ul{
 
 
 
+/* ======= logo */
 
+nav .logo{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
 
+.logo img{
+    width: 130px;
+    height: 42px;
+    margin: 9px 0px 0px 30px;
+}
 
+.logo:hover{
+    background-color: #e0ac0000;
+}
 
 
 
@@ -111,9 +156,15 @@ nav > ul > li > ul{
 /* CONTENIDO DE LA WEB */
 
 main{
-    background-color: rgba(128, 128, 128, 0.788);
+
+    
     margin: 0px 50px 0px 50px;
     padding:70px 0px 0px 0px ;
+    
+}
+main .contenido1{
+    display: table;
+
     
 }
 
@@ -121,38 +172,164 @@ main .contenido1 h1{
     text-align: center;
     margin-top: 30px;
     font-size: 40px;
-    text-shadow: -5px -3px 2px rgb(201, 201, 201);
-    color: rgb(0, 0, 0);
+    text-shadow: -2px -1px 2px rgb(201, 201, 201);
+    color: #000824;
+
     
 }
-main .contenido1{
-    display: table;
+
+/* =========================================== */
+
+main .mundo{
+    width: 200px;
+    height: 200px;
+    background: lightblue;
+    border-radius:50%;
+    box-shadow: -30px -20px 0 0 rgba(0, 0, 0, .10) inset,
+                -70px -30px 0 0 rgba(0, 0, 0, .1) inset,       
+                5px 5px 0 0 rgba(255, 255, 255, 0.24) inset;
+    background:url(/img/mapa.png);
+    background-size: cover;
+    float: left;
+    margin: 10px 40px 0px 40px;
+
+    -webkit-animation: tierra-girando 5s infinite linear;
 }
 
-main .imgmundo {
-    width: 200px;
-    float: left;
-    margin: 20px 25px 10px 25px;
+@-webkit-keyframes tierra-girando{
+    from{
+        background-position: left center;
+    }
+
+    to{
+        background-position: -396px center;
+    }
 }
+
+/* ==================================================== */
 
 main .contenido1 .texto1{
     margin-top: 20px;
-    font-size: 20px;
-    margin: 0px 30px 0px 0px;
-}
-
-main .contenido1 .texto2{
     font-size: 24px;
-    margin: 130px 100px 0px 100px;
-    border-top: 4px dashed rgb(126, 49, 5);
-    border-bottom:4px dashed rgb(126, 49, 5) ;
-    
+    margin: 10px 80px 60px 280px;
+    color: #000100;
 }
 
-main .contenido1 .video{
-    margin:  50px 0px 0px 59px;
-    box-shadow: 0px 0px 40px rgb(172, 97, 0);
+/* ================== */
+
+.linea{
+    border-top: 5px dashed rgb(18, 39, 71);
+    margin: 0px 150px;
 }
+
+
+
+.contenedoranimation{
+    width: 1000px;
+    height: 655px;
+    overflow: hidden;
+    position: relative;
+    margin: 70px auto;
+}
+.contenedoranimation h1{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+    text-shadow: -2px -1px 2px rgb(201, 201, 201);
+    color: #000824;
+}
+
+.contenedoranimation img{
+    width: 100%;
+    height: 100%;
+    border:10px solid #ffffff;
+}
+
+.contenedoranimation div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    text-shadow: -2px 1px 3px black;
+    font-size: 20px;
+    line-height: 38px;
+    padding: 15px 35px;
+    opacity: 0;
+}
+.contenedoranimation div h1{
+    margin-bottom:20px;
+}
+
+.contenedoranimation div:hover{
+    opacity: 1;
+    transition: 1.5s;
+    backdrop-filter: blur(6px);
+    transform:scale(99%);
+}
+
+
+
+/* ============================== */
+
+.infoborder{
+    border: 10px dashed black;
+    display: table;
+    width: 100%;
+    padding: 40px;
+    margin: 90px 0px 90px 0px;
+    background-color: rgba(91, 132, 145, 0.719);
+}
+
+.infoborder .contenidoborder{
+    float: left;
+    width: 45%;
+    font-size: 20px;
+}    
+.infoborder .contenidoborder p{
+    margin-top: 60px;
+    color: #dadada;
+}
+.infoborder .contenidoborder h2{
+    color: #000824;
+    text-align: center;
+}
+
+.video iframe{
+    float: right;
+    box-shadow: 0px 0px 60px #000824;
+    margin-top: 20px;
+
+}
+/* ============================== */
+.contenedortxtvid{
+    border: 10px dashed black;
+    display: table;
+    width: 100% ;
+    padding: 40px;
+    background-color: #a5885cb2;
+}
+
+.contenedortxtvid .contenidoeuropa{
+    float: right;
+    width: 45%;
+    padding: 0px 30px;
+    font-size: 20px;
+}
+.contenedortxtvid .contenidoeuropa h2{
+    margin-bottom: 20px;
+    color: #000824;
+    text-align: center;
+}
+.contenedortxtvid .contenidoeuropa p{
+    color:white;
+}
+
+.contenedortxtvid .video2{
+    margin-top: 50px;
+    float: left;
+
+}
+
 
 /* 
 =======================================================================
@@ -161,7 +338,13 @@ main .contenido1 .video{
 
 
 /* TABLA */
-
+.textodetabla{
+    text-align: center;
+    text-shadow: -2px 2px 2px white;
+    color: #001024;
+    margin-top: 80px;
+    font-size: 60px;
+}
 .tabla{
     width: 900px;
     margin: 60px 0px 60px 0px ;
@@ -174,6 +357,7 @@ main .contenido1 .video{
     border: 3px solid rgb(0, 0, 0);
     background-color: rgba(100, 83, 83, 0.493);
     text-shadow: -2px 2px 2px white;
+    color: #000824;
 
 }
 
@@ -202,17 +386,46 @@ main .contenido1 .video{
 
 
 /* MAPA */
+.contenedoriframe{
+    display: table;
+    border-top: 5px solid black;
+    width: 100%;
+    padding-top: 30px;
+}
+.contperiodico{
+    float: left;
+    padding: 0px 40px;
+}
+.contperiodico .periodico{
+    margin: 45px 0px;
+    
+}
+.contperiodico h1{
+    text-align: center;
+    font-size: 60px;
+    color: #000824;
+    text-shadow: -2px 2px 2px white;
+}
 
+.contmapa{
+    float: right;   
+}
 
-.titulomapa{
+.contmapa .mapa{
+    margin:0px 30px ;
+}
+
+.contmapa h1{
     text-align: center;
     font-size: 60px;
     text-shadow: -2px 2px 2px white;
     margin-bottom: 40px;
+    color: #000824;
 }
 
 .mapa{
     margin-bottom: 50px;
+    margin
 }
 
 /* 
@@ -226,22 +439,23 @@ main .contenido1 .video{
 .pie{
     background-color: black;
     color: white;
-    margin:0px 50px 0px 50px;
 }
 
 
 .pie .nombre{
     font-size:40px;
-    padding: 50px 0px 50px 0px;
+    padding: 80px 0px 40px 0px;
     text-align: center;
 }
 
 .pie address{
     text-align: right;
+    padding: 10px 0px 10px 0px;
 }
 
 .pie .facebook {
+
     float:right ;
     width: 25px;
-    margin:0px 20px 0px 20px;
+    margin:5px 20px 0px 20px;
 }

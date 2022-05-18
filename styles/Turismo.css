@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Press+Start+2P&family=Turret+Road&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Nova+Mono&family=Press+Start+2P&family=Turret+Road&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Nova+Mono&family=Press+Start+2P&family=Roboto+Mono&family=Turret+Road&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/img/fondoturismo0000.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: 'Roboto Mono', monospace;
+    cursor: url(/img/cursor.png),auto;
+
+
+}
+
+
+
+
+
+/* ESTILOS GENERALES */
+nav{ 
+    position: fixed;
+    width: 100%;
+    font-family: 'PT Sans', sans-serif;s
+}
+
+nav  ul{
+    list-style: none ;
+    padding: 0;
+    
+}
+
+nav li{
+    line-height: 60px;
+    position: relative;
+}
+
+nav li ul{
+    position: absolute;
+}
+
+nav a{
+    text-decoration: none;
+    color:#faf2d8;
+    text-shadow: -2px 1px 10px rgb(0, 0, 0);
+    display: block;
+    padding:0px 70px 0px 70px;
+    font-size: 18px;
+    font-weight:;
+
+
+}
+
+nav a:hover{
+    background-color: rgb(63, 62, 62);
+    transition: 0.5s;
+}
+
+
+
+
+nav li ul{
+    display: none;
+}
+
+nav li:hover ul{
+    display:block;
+}
+
+
+
+
+
+
+/* ESTILOS PRIMER NIVEL */
+nav > ul{
+    background:linear-gradient(50deg,rgb(247, 93, 73), rgb(207, 187, 69) );
+    display: table;
+    width: 100%;
+    background-size: 500%;
+    animation:  animado 5s infinite;
+}
+
+@keyframes animado {
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+nav > ul > li{
+    float: right;
+}
+
+/* ESTILO SEGUNDO NIVEL */
+
+nav li li{
+    background: rgb(41, 41, 41);
+    width: 99%;
+}
+
+nav > ul > li > ul{
+    top:100%
+}
+
+
+
+
+/* ======= logo */
+
+nav .logo{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img{
+    width: 130px;
+    height: 42px;
+    margin: 9px 0px 0px 30px;
+}
+
+.logo:hover{
+    background-color: #e0ac0000;
+}
+    
+
+
+
+
+
+main{
+    background-color: rgba(88, 144, 151, 0.685);
+    padding-top:90px;
+    margin: 0px 25px 0px 25px
+}
+
+.titulo{
+    font-family: 'Skranji', cursive;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 1px 2px 2px black, 1px 0 25px rgb(150, 182, 221), 1px 3px 5px rgb(157, 161, 214)
+}
+
+.concepto{
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(0, 0, 0);
+    padding-left: 20px;
+    margin-top: 15px;
+    text-align: justify;
+    margin: 10px;
+    letter-spacing: 0.9px;
+}
+
+.mapa1{
+    float: right;
+    height: 200px;
+    width: 350px;
+    border-radius: 10%;
+    margin-left: 10px;
+}
+div{
+    text-align: center;
+}
+.titulo2{
+    display:inline-block;
+    position: relative;
+    text-align: center;
+    font-family: 'Skranji', cursive;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 1px 2px 2px black, 1px 0 25px rgb(116, 149, 190), 1px 3px 5px rgb(157, 161, 214);
+    margin-top: 20px;
+    
+}
+
+.titulo2::after,.titulo2::before{
+    content:"" ;
+    position: absolute;
+    width: 150px;
+    height: 3px;
+    background-color: black;
+    top: 0.6em;
+    box-shadow:1px 2px 2px rgb(170, 160, 160), 1px 0 25px rgb(205, 219, 236), 1px 3px 5px rgb(157, 161, 214) ;
+}
+.titulo2::before{
+    left: -160px;
+}
+
+.titulo2::after{
+    right:-160px;
+}
+.zona1{
+    text-align: left;
+    text-shadow: 1px 2px 2px black, 1px 0 25px rgb(9, 4, 12), 1px 3px 5px rgb(52, 7, 158);
+    font-family: 'Skranji', cursive;
+    font-size: 40px;
+    margin: 10px 20px;
+    margin-bottom: 25px;
+}
+
+.concepto2{
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(0, 0, 0);
+    padding-left: 20px;
+    margin-top: 15px;
+    text-align: justify;
+    margin: 10px;
+    letter-spacing: 0.9px;
+    margin-right: 10px;
+}
+
+.mapa2{
+    float: right;
+    height: 157px;
+    width: 250px;
+    margin: 0 30px;
+    border: solid;
+    box-shadow:1px 1px 1px rgb(169, 170, 160), 1px 0 15px rgb(227, 236, 205), 1px 1px 2px rgb(157, 161, 214) ;
+}
+
+.mapa2:hover{
+    transform: scale(1.5);
+    filter:saturate(180%);
+}
+
+.zona2{
+    text-align: right;
+    text-shadow: 1px 2px 2px black, 1px 0 25px rgb(9, 4, 12), 1px 3px 5px rgb(52, 7, 158);
+    font-family: 'Skranji', cursive;
+    font-size: 40px;
+    margin: 10px 20px;
+    margin-bottom: 25px;
+}
+
+.concepto3{
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(0, 0, 0);
+    padding-left: 20px;
+    margin-top: 15px;
+    text-align: justify;
+    margin: 10px;
+    letter-spacing: 0.9px;
+    margin-right: 10px;
+}
+
+.mapa3{
+    float: left;
+    height: 157px;
+    width: 250px;
+    margin: 0 30px;
+    border: solid;
+    box-shadow:1px 1px 1px rgb(169, 170, 160), 1px 0 15px rgb(227, 236, 205), 1px 1px 2px rgb(157, 161, 214) ;
+}
+
+.mapa3:hover{
+    transform: scale(1.5);
+    filter:saturate(180%);
+}
+
+hr{
+    border:solid;
+    color: black;
+    box-shadow:1px 1px 1px rgb(170, 160, 160), 1px 0 15px rgb(205, 219, 236), 1px 1px 2px rgb(157, 161, 214) ;
+    width: 90%;
+}
+
+.lpais1{
+    margin: 30px;
+}
+
+.lpais2{
+    margin: 30px;
+} 
+
+.lpais3{
+    margin: 30px;
+}
+
+.lpais4{
+    margin: 30px;
+}
+
+.lpais5{
+    margin: 30px;
+}
+
+.zona3{
+    text-align: left;
+    text-shadow: 1px 2px 2px black, 1px 0 25px rgb(9, 4, 12), 1px 3px 5px rgb(52, 7, 158);
+    font-family: 'Skranji', cursive;
+    font-size: 40px;
+    margin: 10px 20px;
+    margin-bottom: 25px;
+}
+
+.concepto4{
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(0, 0, 0);
+    padding-left: 20px;
+    margin-top: 15px;
+    text-align: justify;
+    margin: 10px;
+    letter-spacing: 0.9px;
+    margin-right: 10px;
+}
+
+.mapa4{
+    float: right;
+    height: 157px;
+    width: 250px;
+    margin: 0 30px;
+    border: solid;
+    box-shadow:1px 1px 1px rgb(169, 170, 160), 1px 0 15px rgb(227, 236, 205), 1px 1px 2px rgb(157, 161, 214) ;
+}
+.mapa4:hover{
+    transform: scale(1.5);
+    filter:saturate(180%);
+}
+
+.zona4{
+    text-align: right;
+    text-shadow: 1px 2px 2px black, 1px 0 25px rgb(9, 4, 12), 1px 3px 5px rgb(52, 7, 158);
+    font-family: 'Skranji', cursive;
+    font-size: 40px;
+    margin: 10px 20px;
+    margin-bottom: 25px;
+}
+
+.concepto5{
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(0, 0, 0);
+    padding-left: 20px;
+    margin-top: 15px;
+    text-align: justify;
+    margin: 10px;
+    letter-spacing: 0.9px;
+    margin-right: 10px;
+}
+
+.mapa5{
+    float: left;
+    height: 157px;
+    width: 250px;
+    margin: 0 30px;
+    border: solid;
+    box-shadow:1px 1px 1px rgb(169, 170, 160), 1px 0 15px rgb(227, 236, 205), 1px 1px 2px rgb(157, 161, 214) ;
+}
+
+.mapa5:hover{
+    transform: scale(1.5);
+    filter:saturate(180%);
+}
+
+.zona5{
+    text-align: left;
+    text-shadow: 1px 2px 2px black, 1px 0 25px rgb(9, 4, 12), 1px 3px 5px rgb(52, 7, 158);
+    font-family: 'Skranji', cursive;
+    font-size: 40px;
+    margin: 10px 20px;
+    margin-bottom: 25px;
+}
+
+.concepto6{
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(0, 0, 0);
+    padding-left: 20px;
+    margin-top: 15px;
+    text-align: justify;
+    margin: 10px;
+    letter-spacing: 0.9px;
+    margin-right: 10px;
+}
+
+.mapa6{
+    float: right;
+    height: 157px;
+    width: 250px;
+    margin: 0 30px;
+    border: solid;
+    box-shadow:1px 1px 1px rgb(169, 170, 160), 1px 0 15px rgb(227, 236, 205), 1px 1px 2px rgb(157, 161, 214) ;
+}
+
+.mapa6:hover{
+    transform: scale(1.5);
+    filter:saturate(180%);
+}
+
+.boton{
+    display: inline-flex;
+    width: 400px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Paytone One', sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: .3s ease all;
+}
+
+.boton:hover{
+    background-color: beige;
+    color: black;
+}
+
+.link1{
+    text-decoration: none;
+}
+
+.contenedor{
+    margin: 25px;
+}
+
+
+.pie{
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.pie .nombre{
+    font-size:40px;
+    padding: 70px 0px 40px 0px;
+    text-align: center;
+}
+
+.pie address{
+    text-align: right;
+    padding: 10px 0px 10px 0px;
+}
+
+.pie .facebook {
+
+    float:right ;
+    width: 25px;
+    margin:5px 20px 0px 20px;
+}

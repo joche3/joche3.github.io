@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Press+Start+2P&family=Turret+Road&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Nova+Mono&family=Press+Start+2P&family=Turret+Road&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Nova+Mono&family=Press+Start+2P&family=Roboto+Mono&family=Turret+Road&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/img/greciacyan0000.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    font-family: 'Roboto Mono', monospace;
+    cursor: url(/img/cursor.png),auto;
+
+}
+
+
+
+
+
+/* ESTILOS GENERALES */
+nav{ 
+    position: fixed;
+    width: 100%;
+    font-family: 'PT Sans', sans-serif;s
+}
+
+nav  ul{
+    list-style: none ;
+    padding: 0;
+    
+}
+
+nav li{
+    line-height: 60px;
+    position: relative;
+}
+
+nav li ul{
+    position: absolute;
+}
+
+nav a{
+    text-decoration: none;
+    color:#faf2d8;
+    text-shadow: -2px 1px 10px rgb(0, 0, 0);
+    display: block;
+    padding:0px 70px 0px 70px;
+    font-size: 18px;
+    font-weight:;
+
+
+}
+
+nav a:hover{
+    background-color: rgb(63, 62, 62);
+    transition: 0.5s;
+}
+
+
+
+
+nav li ul{
+    display: none;
+}
+
+nav li:hover ul{
+    display:block;
+}
+
+
+
+
+
+
+/* ESTILOS PRIMER NIVEL */
+nav > ul{
+    background:linear-gradient(50deg,rgb(44, 167, 172),rgb(140, 179, 104));
+    display: table;
+    width: 100%;
+    background-size: 500%;
+    animation:  animado 5s infinite;
+}
+
+@keyframes animado {
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+nav > ul > li{
+    float: right;
+}
+
+/* ESTILO SEGUNDO NIVEL */
+
+nav li li{
+    background: rgb(41, 41, 41);
+    width: 99%;
+}
+
+nav > ul > li > ul{
+    top:100%
+}
+
+
+
+
+/* ======= logo */
+
+nav .logo{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img{
+    width: 130px;
+    height: 42px;
+    margin: 9px 0px 0px 30px;
+}
+
+.logo:hover{
+    background-color: #e0ac0000;
+}
+
+
+
+
+
+
+main{
+    padding-top: 80px;
+    margin: 0px 60px 0px 60px;
+}
+
+
+.contenido1 h1{
+    text-align: center;
+    text-shadow: -2px 2px 2px white;
+    font-size:40px;
+}
+.contenido1 img{
+    width: 240px;
+    float: right;
+    margin:0px 40px 0px 40px ;
+}
+
+.contenido1 p{
+    margin: 0px 50px 0px 50px ;
+    font-size: 20px;
+}
+
+
+
+.tituloimg{
+    text-align: center;
+    font-size: 40px;
+    margin: 70px 0px 70px 0px;
+    color: rgb(0, 0, 0);
+    text-shadow: -6px 5px 3px rgb(223, 215, 215);
+}
+
+
+
+
+.general{
+    display: flex;
+    justify-content: center;
+    margin: 0px 100px 0px 100px;
+}
+
+.img1{
+    width: 400px;
+    height: 300px;
+    margin: 40px 40px 0px 40px ;
+    border: 30px double rgb(93, 94, 79);
+}
+
+.img2{
+    width: 400px;
+    margin: 30px 40px 0px 40px ;
+    border: 20px double rgb(93, 94, 79);
+}
+
+.img3{
+    width: 400px;
+    height: 300px;
+    margin: 40px 40px 0px 40px ;
+    border: 30px double rgb(93, 94, 79);
+}
+
+.general img:hover{
+    transform: scale(110%);
+    filter: saturate(140%);
+    transition:1S;
+}
+
+
+
+.texto2{
+    font-size: 20px;
+    margin: 50px 0px 50px 0px;
+}
+
+
+
+
+
+
+
+.pie{
+    background-color: rgba(0, 0, 0, 0.711);
+    color: white;
+ 
+}
+
+
+.pie .nombre{
+    font-size:40px;
+    padding: 50px 0px 50px 0px;
+    text-align: right;
+}
+
+.pie address{
+    text-align: right;
+    font-size: 30px;
+}
+
+.pie .ig {
+    float:right ;
+    width: 35px;
+    margin:0px 20px 0px 20px;
+}
+
+/* PIE DE PAGINA */
+
+.pie{
+    background-color: black;
+    color: white;
+}
+
+
+.pie .nombre{
+    font-size:40px;
+    padding: 80px 0px 40px 0px;
+    text-align: center;
+}
+
+.pie address{
+    font-size: 18px;
+    text-align: right;
+    padding: 10px 0px 10px 0px;
+}
+
+.pie .facebook {
+
+    float:right ;
+    width: 30px;
+    margin:5px 20px 0px 20px;
+}

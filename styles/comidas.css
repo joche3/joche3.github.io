@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Press+Start+2P&family=Turret+Road&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Nova+Mono&family=Press+Start+2P&family=Turret+Road&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Nova+Mono&family=Press+Start+2P&family=Roboto+Mono&family=Turret+Road&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/img/comida00000000.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: 'Roboto Mono', monospace;
+    cursor: url(/img/cursor.png),auto;
+
+
+}
+
+
+
+
+
+/* ESTILOS GENERALES */
+nav{ 
+    position: fixed;
+    width: 100%;
+    font-family: 'PT Sans', sans-serif;s
+}
+
+nav  ul{
+    list-style: none ;
+    padding: 0;
+    
+}
+
+nav li{
+    line-height: 60px;
+    position: relative;
+}
+
+nav li ul{
+    position: absolute;
+}
+
+nav a{
+    text-decoration: none;
+    color:#faf2d8;
+    text-shadow: -2px 1px 10px rgb(0, 0, 0);
+    display: block;
+    padding:0px 70px 0px 70px;
+    font-size: 18px;
+    font-weight:;
+
+
+}
+
+nav a:hover{
+    background-color: rgb(63, 62, 62);
+    transition: 0.5s;
+}
+
+
+
+
+nav li ul{
+    display: none;
+}
+
+nav li:hover ul{
+    display:block;
+}
+
+
+
+
+
+
+/* ESTILOS PRIMER NIVEL */
+nav > ul{
+    background:linear-gradient(50deg,rgb(98, 153, 76), rgb(165, 164, 83) );
+    display: table;
+    width: 100%;
+    background-size: 500%;
+    animation:  animado 5s infinite;
+}
+
+@keyframes animado {
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+nav > ul > li{
+    float: right;
+}
+
+/* ESTILO SEGUNDO NIVEL */
+
+nav li li{
+    background: rgb(41, 41, 41);
+    width: 99%;
+}
+
+nav > ul > li > ul{
+    top:100%
+}
+
+
+
+
+/* ======= logo */
+
+nav .logo{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img{
+    width: 130px;
+    height: 42px;
+    margin: 9px 0px 0px 30px;
+}
+
+.logo:hover{
+    background-color: #e0ac0000;
+}
+
+
+
+
+
+
+/* =======  */
+
+main{
+    padding-top: 80px;
+    margin: 0px 25px 0px 25px;
+}
+
+.contespaña {
+        border: 5px solid black;
+}
+.contespaña h1{
+    text-align: center;
+}
+.contespaña p{
+    margin: 10px 30px 0px 30px;
+    font-size: 19px;
+}
+
+.contimagenesespaña .img1{
+    width: 350px;
+}
+
+.contimagenesespaña .img2{
+    width: 350px;
+    height: 239px;
+}
+
+.contimagenesespaña .img3{
+    width: 350px;
+}
+
+
+.contimagenesespaña{
+    margin-top: 70px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+
+.contimagenesespaña img{
+    margin: 0px 40px 0px 40px;
+    border: 6px solid black;
+}
+
+
+.contimagenesespaña p{
+    text-align: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    border: 5px solid black;
+    margin: 10px 40px 0px 40px;
+}
+
+.contimagenesespaña img:hover{
+    border: 6px solid rgb(201, 74, 74);
+    transition: 0.3s ;
+    transform: scale(107%);
+}
+
+/* =========================== */
+
+.contfrancia {
+    border: 5px solid black;
+    margin-top: 200px;
+}
+.contfrancia h1{
+text-align: center;
+}
+.contfrancia p{
+margin: 10px 30px 0px 30px;
+font-size: 19px;
+}
+
+.contimagenesfrancia .img11{
+width: 350px;
+}
+
+.contimagenesfrancia .img22{
+width: 350px;
+height: 196px;
+}
+
+.contimagenesfrancia .img33{
+width: 350px;
+height: 196px;
+}
+
+
+.contimagenesfrancia{
+margin-top: 70px;
+margin-bottom: 50px;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;
+
+}
+
+.contimagenesfrancia img{
+margin: 0px 40px 0px 40px;
+border: 6px solid black;
+
+}
+.contimagenesfrancia img:hover{
+border: 6px solid rgb(0, 132, 255);
+transition: 0.3s;
+transform: scale(107%);
+}
+
+
+
+.contimagenesfrancia p{
+text-align: center;
+color: rgb(0, 0, 0);
+font-size: 24px;
+border: 5px solid black;
+margin: 10px 40px 0px 40px;
+}
+
+
+/* ==========================] */
+
+.contitalia {
+    border: 5px solid black;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+.contitalia h1{
+text-align: center;
+}
+.contitalia p{
+margin: 10px 30px 0px 30px;
+font-size: 19px;
+}
+
+.contimagenesitalia .img111{
+width: 350px;
+}
+
+.contimagenesitalia .img222{
+width: 350px;
+height:235px;
+}
+
+.contimagenesitalia .img333{
+width: 350px;
+height: 235px;
+}
+
+
+.contimagenesitalia{
+margin-top: 70px;
+margin-bottom: 50px;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;
+
+}
+
+.contimagenesitalia img{
+margin: 0px 40px 0px 40px;
+border: 6px solid black;
+
+}
+.contimagenesitalia img:hover{
+border: 6px solid rgb(80, 156, 65);
+transition: 0.3s;
+transform: scale(107%);
+}
+
+
+
+.contimagenesitalia p{
+text-align: center;
+color: rgb(0, 0, 0);
+font-size: 24px;
+border: 5px solid black;
+margin: 10px 40px 0px 40px;
+}
+
+
+/* PIE DE PAGINA */
+
+.pie{
+    background-color: black;
+    color: white;
+
+}
+
+
+.pie .nombre{
+    font-size:40px;
+    padding: 80px 0px 40px 0px;
+    text-align: center;
+}
+
+.pie address{
+    text-align: right;
+    padding: 10px 0px 10px 0px;
+}
+
+.pie .facebook {
+
+    float:right ;
+    width: 25px;
+    margin:5px 20px 0px 20px;
+}

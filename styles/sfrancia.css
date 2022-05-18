@@ -1,63 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Pacifico&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Press+Start+2P&family=Turret+Road&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Nova+Mono&family=Press+Start+2P&family=Turret+Road&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Nova+Mono&family=Press+Start+2P&family=Roboto+Mono&family=Turret+Road&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-image: url("/img/francia0000.jpg");
+    background-image: url("/img/franciafondoreal0000.jpg");
     background-size: 100%;
     background-attachment: fixed;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Roboto Mono', monospace;
     cursor: url(/img/cursor.png),auto;
+
 }
 
 
 
 
-.barra{ 
-    background:linear-gradient(60deg,rgba(143, 61, 61, 0.904), rgba(146, 83, 165, 0.897) );
+
+/* ESTILOS GENERALES */
+nav{ 
     position: fixed;
     width: 100%;
+    font-family: 'PT Sans', sans-serif;s
 }
-/* ESTILOS GENERALES */
-.barra  ul{
+
+nav  ul{
     list-style: none ;
     padding: 0;
-
+    
 }
 
-.barra li{
+nav li{
     line-height: 60px;
     position: relative;
 }
 
-.barra li ul{
+nav li ul{
     position: absolute;
 }
 
-.barra a{
+nav a{
     text-decoration: none;
-    color:#000100;
+    color:#faf2d8;
+    text-shadow: -2px 1px 10px rgb(0, 0, 0);
     display: block;
     padding:0px 70px 0px 70px;
-    font-size: 15px;
+    font-size: 18px;
+    font-weight:;
+
+
 }
 
-.barra li:hover{
-    background-color: rgba(102, 54, 54, 0.774);
+nav a:hover{
+    background-color: rgb(63, 62, 62);
     transition: 0.5s;
-
 }
 
 
 
 
-.barra li ul{
+nav li ul{
     display: none;
 }
 
-.barra li:hover ul{
+nav li:hover ul{
     display:block;
 }
 
@@ -68,31 +85,63 @@ body {
 
 /* ESTILOS PRIMER NIVEL */
 nav > ul{
+    background:linear-gradient(50deg,rgb(43, 108, 168), rgb(160, 160, 160), rgb(180, 83, 83));
     display: table;
     width: 100%;
+    background-size: 500%;
+    animation:  animado 7s infinite;
+}
+
+@keyframes animado {
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
 }
 
 nav > ul > li{
-    float: left;
-
+    float: right;
 }
-
-
-
-
-
-
 
 /* ESTILO SEGUNDO NIVEL */
 
 nav li li{
-    background: rgba(18, 175, 136, 0.822);
-    width: 108%;
+    background: rgb(41, 41, 41);
+    width: 99%;
 }
 
 nav > ul > li > ul{
     top:100%
 }
+
+
+
+
+/* ======= logo */
+
+nav .logo{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img{
+    width: 130px;
+    height: 42px;
+    margin: 9px 0px 0px 30px;
+}
+
+.logo:hover{
+    background-color: #e0ac0000;
+}
+
 
 
 /* =============================================================================
@@ -103,11 +152,11 @@ nav > ul > li > ul{
 /* CONTENIDO DE LA WEB */
 main{
     padding-top: 60px;
+    display: table;
 }
 
 .contenido1{
-    background:linear-gradient(60deg,rgba(58, 67, 153, 0.322), rgba(255, 255, 255, 0.233) ,rgba(143, 58, 58, 322));
-
+    background-color: rgba(179, 179, 179, 0.801);
 }
 
 .contenido1 h1{
@@ -115,15 +164,17 @@ main{
     text-shadow: -2px 2px 2px white;
     font-size: 60px;
 }
-.contenido1 img{
-    width: 240px;
-    float: right;
-    margin:0px 40px 0px 40px ;
-}
+
 
 .contenido1 p{
     margin: 0px 50px 0px 50px ;
     font-size: 23px;
+}
+
+.contenido1 img{
+    width: 200px;
+    float: right;
+    margin: 20px 50px 50px 40px;
 }
 
 
@@ -174,8 +225,9 @@ main{
 }
 
 .contenedortotal .contenedorimgandtext{  
+
     position: relative;  
-    display: inline-block;
+
 }
 
 .contenedortotal .contenedortext{
@@ -197,14 +249,16 @@ main{
 
 }
 
-.contenedortotal h1{
-    text-align: center;
-    text-shadow: -2px 2px 6px rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    
+.tituloimg{
+    color: rgb(0, 35, 131);
+    font-weight: bold;
+    text-shadow: 1px 2px 10px black;
 }
 
-
+.contenedorimgandtext h1{
+    color: white;
+    text-shadow: 1px 2px 10px black;
+}
 
 
 
@@ -223,22 +277,23 @@ main{
 .pie{
     background-color: black;
     color: white;
-    margin:0px 50px 0px 50px;
 }
 
 
 .pie .nombre{
     font-size:40px;
-    padding: 50px 0px 50px 0px;
+    padding: 80px 0px 40px 0px;
     text-align: center;
 }
 
 .pie address{
     text-align: right;
+    padding: 10px 0px 10px 0px;
 }
 
 .pie .facebook {
+
     float:right ;
     width: 25px;
-    margin:0px 20px 0px 20px;
+    margin:5px 20px 0px 20px;
 }
