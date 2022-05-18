@@ -214,10 +214,11 @@ main{
 .contenedorimagenes img{
     margin: 10px 60px 20px 60px;
     border: 3px solid black;
+    transition: 1s ;
+
 }
 .contenedorimagenes img:hover{
     transform: scale(200%);
-    transition: 1s ;
 }
 
 
