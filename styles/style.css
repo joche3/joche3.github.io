@@ -159,10 +159,11 @@ nav .logo{
 
 /* CONTENIDO DE LA WEB */
 .god{
+    width: 100%;
 }
 
 main{
-
+    width: 100%;
 
     margin: 0px 50px 0px 50px;
     padding:70px 0px 0px 0px ;
@@ -475,23 +476,26 @@ main .contenido1 .texto1{
     nav{
         width: 100%;
         padding: 0;
+        text-align: center;
 
     }
 
+    nav > ul > li{
+        float: none;
+        display: inline-block;
+    }
     nav a{
-        padding: 0px 50px 0px 50px ;
-        font-size: 20px;
+        padding: 0px 10px 0px 10px ;
+        font-size: 15px;
     }
 
     .logo{
+        display: none;
         width: 160px;
     }
 
     main{
-
-    }
-
-    .contenido1 .mundo{
+        width: 100%;
 
     }
 
@@ -500,13 +504,6 @@ main .contenido1 .texto1{
         font-size: 24px;
         margin:0;
         width: 100%;
-    }
-
-    .linea{
-        width: 100%;
-    }
-    main{
-       
     }
 
 }
