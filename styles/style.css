@@ -16,6 +16,7 @@
 }
 
 body {
+    width: 100%;
     background-image: url("/img/ra60000.jpg");
     background-size: 100%;
     background-attachment: fixed;
@@ -72,10 +73,12 @@ nav a:hover{
 
 nav li ul{
     display: none;
+
 }
 
 nav li:hover ul{
     display:block;
+
 }
 
 
@@ -115,10 +118,11 @@ nav > ul > li{
 nav li li{
     background: rgb(41, 41, 41);
     width: 99%;
+
 }
 
 nav > ul > li > ul{
-    top:100%
+    top:100%;
 }
 
 
@@ -154,10 +158,12 @@ nav .logo{
 
 
 /* CONTENIDO DE LA WEB */
+.god{
+}
 
 main{
 
-    
+
     margin: 0px 50px 0px 50px;
     padding:70px 0px 0px 0px ;
     
@@ -458,4 +464,49 @@ main .contenido1 .texto1{
     float:right ;
     width: 25px;
     margin:5px 20px 0px 20px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 400px){
+    nav{
+        width: 100%;
+        padding: 0;
+
+    }
+
+    nav a{
+        padding: 0px 50px 0px 50px ;
+        font-size: 20px;
+    }
+
+    .logo{
+        width: 160px;
+    }
+
+    main{
+
+    }
+
+    .contenido1 .mundo{
+
+    }
+
+    main .contenido1 .texto1{
+        margin-top: 20px;
+        font-size: 24px;
+        margin:0;
+        width: 100%;
+    }
+
+    .linea{
+        width: 100%;
+    }
+    main{
+       
+    }
+
 }
