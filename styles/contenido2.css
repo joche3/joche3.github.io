@@ -1,0 +1,53 @@
+.contenido2 {
+    background-color: rgb(180, 176, 164);
+    margin: 80px 0px;
+    padding-top: 40px ;
+    padding-bottom: 30px;   
+}
+.contenido2 h1,p{
+    text-align: center;
+
+}
+
+.contenido2 img{
+    width: 200px;
+    padding: 10px;
+
+}
+
+.contenido2 .contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+footer{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 40px;
+    
+}
+
+
+footer .contenedor{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+footer .contenedor P{
+    font-size: 20px;
+}
+
+.sociales a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.sociales a:active{
+    transform: scale(90%);
+}

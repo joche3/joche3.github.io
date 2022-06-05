@@ -1,0 +1,41 @@
+.contenido1 {
+    margin:20px 40px;
+}
+
+.contenido1  .contenedor{
+    text-align: center;
+
+}
+
+.contenido1 .contenedor h1{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.contenido1 .contenedor  img{
+    margin-top: 60px;
+    width: 25%;
+    max-width:400px;
+    border-radius: 5%;
+    
+    animation: imagenpata 1s infinite linear;
+}
+
+
+@keyframes imagenpata  {
+
+    0%{
+        transform: scale(105%)
+    }
+    50%{
+        transform: scale(100%)
+    }
+    100%{
+        transform: scale(105%)
+    }
+}
+
+
+
+
