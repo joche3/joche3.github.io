@@ -3,36 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,maximum-scale=1.0, minimum.scale=1.0">
     <title>WebSite JavaS</title>
     <link rel="stylesheet" href="styles/barra_menu.css">
     <link rel="stylesheet" href="styles/banner.css">
+    <link rel="stylesheet" href="styles/fontello.css">
     <link rel="stylesheet" href="styles/contenido1.css">
     <link rel="stylesheet" href="styles/contenido2.css">
-    <link rel="stylesheet" href="styles/fontello.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
+    <header>
+        <div class="contenedor">
+            <a href="index.html" class="java"><h2>JavaScript</h2></a>
+            <input type="checkbox" id="menubar">
+            <label for="menubar" class="icon-menu"></label>
 
-
-
-
-        <nav>
-            <ul>
-                <a href="index.html" class="java"><p>JavaScript</p></a>
-                <li><a href="#">Información</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Juegos y Varios</a>
-                    <ul>
-                        <li><a href="/js/Suerte/index.html">Adivinar</a></li>
-                        <li><a href="/js/Cupon/index.html">Cupones</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-
-
-
+            <nav>
+                <ul>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Practicas</a>
+                        <ul>
+                            <li><a href="/js/calculadora/calculadora.html">Calculadora</a></li>
+                            <li><a href="/js/carrusel/index.html">Carrusel de Imagenes</a></li>
+                        </ul></li>
+                    <li><a href="#">Ejecicios</a>
+                        <ul>
+                            <li><a href="/js/Suerte/index.html">Adivinar</a></li>
+                            <li><a href="/js/Cupon/index.html">Cupones</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
     <main>
+
         <section class="banner">
             <img src="img/java0000.jpg" alt="java">
             <div class="contenedor">
@@ -42,23 +49,16 @@
         </section>
 
 
-
         <section class="contenido1">
             
-            <div class="contenedor">
                 <h1>Evolución de JavaScript</h1>
-                <p>Aunque JavaScript surgió como un lenguaje de script para mejorar las capacidades de la web de la época allá por 1995 por la extinta Netscape, JavaScript no ha dejado de evolucionar desde entonces. Originalmente el lenguaje se basaba a su vez basaba en CEnvi desarrollado a su vez por Nombas.
+                <p>JavaScript surgió como un lenguaje de script para mejorar las capacidades de la web de la época allá por 1995 por la extinta Netscape, JavaScript no ha dejado de evolucionar desde entonces. Originalmente el lenguaje se basaba a su vez basaba en CEnvi desarrollado a su vez por Nombas.
 
-                Brendan Eich, un programador que trabajaba en Netscape, pensó que podría solucionar las limitaciones de la web de entonces, adaptando otras tecnologías existentes (como ScriptEase) al navegador Netscape Navigator 2.0, que iba a lanzarse en aquel año. Inicialmente, Eich denominó a su lenguaje LiveScript y fue un éxito.
-                </p>
-            
-            
-                <img src="img/eich.jpg" alt="">
-            </div>
-            
-            
+                Brendan Eich, un programador que trabajaba en Netscape, pensó que podría solucionar las limitaciones de la web de entonces, adaptando otras tecnologías existentes (como ScriptEase) al navegador Netscape Navigator 2.0, que iba a lanzarse en aquel año. Inicialmente, Eich denominó a su lenguaje LiveScript y fue un éxito.></p>
+                <div class="contenedor">
+                    <img src="img/eich.jpg" alt="">
+                </div>
         </section>
-
 
 
 
@@ -85,19 +85,49 @@
                 </article>
             </div>
         </section>
+
     </main>
 
-
     <footer>
-        <div class="contenedor">
-            <p>Josue Cesar Mamani Choque WEB © 2022</p>
-        
-            <div class="sociales">
-
-                <a href="https://www.facebook.com/josue.mamanich" class="icon-facebook-official"></a>
-                <a href="#" class="icon-instagram"></a>
-
+        <div class="footer-container">
+            <div class="footer-content-container">
+                <h3 class="website-logo">Josué - Sebastian</h3>
+                <span class="footer-info"></span>
+                <span class="footer-info">sebastian_mn15@hotmail.com</span>
+                <span class="footer-info">75068446@certus.edu.pe</span>
             </div>
+            <div class="footer-menus">
+                <div class="footer-content-container">
+                    <span class="menu-title">menu</span>
+                    <a href="" class="menu-item-footer">Home</a>
+                    <a href="" class="menu-item-footer">Courses</a>
+                    <a href="" class="menu-item-footer">Testimonials</a>
+                </div>
+                <div class="footer-content-container">
+                    <span class="menu-title">legal</span>
+                    <a href="" class="menu-item-footer">Privacy Policy</a>
+                    <a href="" class="menu-item-footer">Cookies</a>
+                    <a href="" class="menu-item-footer">Legal Advice</a>
+                </div>
+            </div>
+            
+            <div class="footer-content-container">
+                <span class="menu-title">follow us</span>
+                <div class="social-container">
+                    <a href="https://discord.com/channels/@me" class="social-link">
+                        <img src="/Imagenes/discord.png" alt="" class="sigueme">
+                    </a>
+                    <a href="https://www.instagram.com/anuel/" class="social-link">
+                        <img src="/Imagenes/instagram.png" alt="" class="sigueme">
+                    </a>
+                    <a href="https://www.facebook.com/groups/1818266608372852/?hoisted_section_header_type=recently_seen&multi_permalinks=1977864022413109" class="social-link">
+                        <img src="/Imagenes/facebook.png" alt="" class="sigueme">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-container">
+            <span class="copyright">Copyright 2021 - All rights reserved.</span>
         </div>
     </footer>
 
