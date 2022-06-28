@@ -53,14 +53,15 @@
 .zowie .EC p{   
     margin-top: -60px;
     opacity: 0;
+    transition: 1s all;
+}
+.zowie .EC img{
+    transition: 1s all;
 }
 .zowie .EC img:hover {
     transform: scale(120%);
-    transition: 1s all;
-
 }
-.zowie .EC img:hover ~ p{
-    transition: 1s all;
+.zowie .EC img:hover ~ p{  
     opacity: 1;
 }
 
@@ -72,14 +73,15 @@
 .zowie .FK p{   
     margin-top: -60px;
     opacity: 0;
+    transition: 1s all;
+}
+.zowie .FK img{
+    transition: 1s all;
 }
 .zowie .FK img:hover {
     transform: scale(120%);
-    transition: 1s all;
-
 }
 .zowie .FK img:hover ~ p{
-    transition: 1s all;
     opacity: 1;
 }
 
@@ -91,14 +93,15 @@
 .zowie .ZA p{   
     margin-top: -60px;
     opacity: 0;
+    transition: 1s all;
+}
+.zowie .ZA img{
+    transition: 1s all;
 }
 .zowie .ZA img:hover {
     transform: scale(120%);
-    transition: 1s all;
-
 }
 .zowie .ZA img:hover ~ p{
-    transition: 1s all;
     opacity: 1;
 }
 
