@@ -114,7 +114,7 @@
         margin-bottom: 40px;
     }
     .content1 p{
-        padding: 0px 150px;
+        padding: 0px 100px;
     }
 
     .content1 img{
@@ -129,6 +129,7 @@
         display: flex;
         justify-content: center;
         flex-wrap: nowrap;
+        width: 1000px;
     }
 
     .contenedor1{

@@ -39,3 +39,10 @@ footer .contenedor{
         justify-content: space-between;
     }
 }
+
+@media screen and (min-width:1024px){
+
+    footer .contenedor{
+       width: 1000px;
+    }
+}

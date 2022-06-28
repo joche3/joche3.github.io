@@ -23,6 +23,7 @@
         
             <nav>
                 <ul>
+                    <li><a href="#" id="register"><p>Registrarse</p></a></li>
                     <li><a href="#footer">Pie de Pagina</a></li>
                     <li><a href="#zowie">Zowie</a></li>
                     <li><a href="#banner">Bienvenido</a></li>
@@ -79,6 +80,7 @@
                     <img src="/img/za.png" alt="ZA">
                     <p>Serie ZA</p>
                 </article>
+                
             </div>  
         </section>
 
@@ -89,9 +91,9 @@
             <p class="copy">Josué Cesar Mamani Choque Web - 2022</p>
             <div class="sociales">
 
-                <a href="" class="icon-facebook-official"></a>
+                <a href="https://www.facebook.com/josue.mamanich" class="icon-facebook-official"></a>
 
-                <a href="" class="icon-instagram"></a>
+                <a href="#" class="icon-instagram"></a>
                 
             </div>
         </div>
@@ -123,7 +125,7 @@
 
 
 
-    <!-- <script type="module">
+    <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
         import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js";
@@ -144,15 +146,11 @@
         const app = initializeApp(firebaseConfig);
         const auth = getAuth(app);
 
-        document.getElementById("salir").addEventListener("click", function(){
-            signOut(auth).then(() => {
-                window.open("/practica6/index.html")
-            // Sign-out successful.
-            }).catch((error) => {
-            // An error happened.
-            });
+        document.getElementById("register").addEventListener("click", function(){
+                window.open("/index.html")
+           
         })
-      </script> -->
+      </script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>
         AOS.init();

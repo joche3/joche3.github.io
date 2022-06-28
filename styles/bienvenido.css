@@ -54,6 +54,9 @@ nav ul {
     list-style: none;
 }
 
+nav #register {
+    display: none;
+}
 nav a{
     text-decoration: none;
     color: black;
@@ -71,10 +74,7 @@ nav a{
 }
 
 
-.contenedor { 
-    width: 100%;
-    margin: auto;
-}
+
 
 @media screen and (min-width:1024px){
     .contenedor nav {
@@ -101,7 +101,37 @@ nav a{
     header .contenedor{
         width: 1000px;
     }
+
+    header #register{
+        display: block;
+    }
+    
+    header #register p{
+        padding: 2px 10px 4px 10px;
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        background: linear-gradient(90deg, rgb(145, 145, 145),rgb(145, 145, 145),rgb(20, 20, 20));
+        background-size: 500%;
+        animation: register 1.5s infinite;
+        border-radius: 30px;
+
+        
+    }
+    
+    @keyframes register {
+        0%{
+            background-position: 0%;
+        }
+        50%{
+            background-position: 100%;
+        }
+        100%{
+            background-position: 0%;
+        }
+    }
+    
 }
+
 
 
 
