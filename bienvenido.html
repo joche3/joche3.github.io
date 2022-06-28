@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,maximum-scale=1.0, minimum.scale=1.0">    
+    <title>Bienvenido</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/bienvenido.css">
+    <link rel="stylesheet" href="/styles/fontello.css">
+    <link rel="stylesheet" href="/styles/banner.css">
+    <link rel="stylesheet" href="/styles/content1.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+</head>
+
+
+<body>
+    <header >
+        <div class="contenedor">
+            <h2>X-Store</h2>
+            <input type="checkbox" id="menubar">
+            <label for="menubar" class="icon-menu"></label>
+        
+            <nav>
+                <ul>
+                    <li><a href="#footer">Pie de Pagina</a></li>
+                    <li><a href="#zowie">Zowie</a></li>
+                    <li><a href="#banner">Bienvenido</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="banner" id="banner">
+            <video src="/img/video.mp4" autoplay muted loop></video>
+            <div class="contenedor">
+                <h1>¡ Bienvenido !</h1>
+                <p>Somos X-Store la mejor tienda de informatica en el Perú</p>
+            </div>
+        </section>
+
+
+
+        <div class="contenedor1" data-aos="fade-down">
+            <p>Arequipa - Perú⠀⠀⠀⠀17/06/2022</p>
+        </div>
+
+       <span id="zowie"></span>
+
+        <section class="content1">
+            
+            <div class="contenedor" data-aos="zoom-in">
+                <div>
+                    <h1 >Los mejores ratones para competición</h1>
+                    <p>
+                        Zowie es una marca que comenzó su carrera allá por el año 2008 y desde el principio se mostró tremendamente comprometida con los e-Sports.
+                    </p>
+                    <p>
+                        En 2015, la empresa fue adquirida por BenQ, aunque eso no cambió en exceso su compromiso con los usuarios. Es por esto que hoy día Zowie sigue siendo uno de los nombres más relevantes en el mundo del gaming profesional.
+                    </p>
+                </div>
+                <img src="/img/zowie.png" alt="zowie">
+            </div>
+        </section>
+
+        <section  class="zowie">
+            <div class="contenedor">
+                <article class="EC">
+                    <img src="/img/ec.png" alt="EC">
+                    <p>Serie EC</p>
+                </article>
+                <article class="FK">
+                    <img src="/img/fk.png" alt="FK">
+                    <p>Serie FK</p>
+                </article>
+                <article class="ZA">
+                    <img src="/img/za.png" alt="ZA">
+                    <p>Serie ZA</p>
+                </article>
+            </div>  
+        </section>
+
+    </main>
+
+    <footer data-aos="fade-right" id="footer">
+        <div class="contenedor">
+            <p class="copy">Josué Cesar Mamani Choque Web - 2022</p>
+            <div class="sociales">
+
+                <a href="" class="icon-facebook-official"></a>
+
+                <a href="" class="icon-instagram"></a>
+                
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+        import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyAYA8n5MZrtkyylOyxvOzPfWR_urxovyaE",
+          authDomain: "clientes-fad7b.firebaseapp.com",
+          projectId: "clientes-fad7b",
+          storageBucket: "clientes-fad7b.appspot.com",
+          messagingSenderId: "1068288966027",
+          appId: "1:1068288966027:web:d17efc9cc331b98b10c38e"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        document.getElementById("salir").addEventListener("click", function(){
+            signOut(auth).then(() => {
+                window.open("/practica6/index.html")
+            // Sign-out successful.
+            }).catch((error) => {
+            // An error happened.
+            });
+        })
+      </script> -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+</body>
+</html>

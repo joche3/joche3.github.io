@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/iniciar.css">
+    <title>Iniciar Sesion</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Inicar sesión</h1>
+
+        <p>Si ya te registraste ingresa tu correo electrónico y contraseña para iniciar sesion <span>(si aun no te has registrado preciona el botón de "Atras")</span>
+
+        </p>
+
+        <p>Correo Electrónico</p>
+
+        <input type="email" name="" id="email1">
+
+        <p>Contraseña</p>
+
+        <input type="password" name="" id="password1">
+        <button id="iniciar">Iniciar</button>
+        <p id="mensaje"></p>
+    </div>
+
+    <div class="listo">
+        <a href="" id="atras"> Atras </a>
+    </div>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
+        import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-auth.js";
+        // import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAYA8n5MZrtkyylOyxvOzPfWR_urxovyaE",
+            authDomain: "clientes-fad7b.firebaseapp.com",
+            projectId: "clientes-fad7b",
+            storageBucket: "clientes-fad7b.appspot.com",
+            messagingSenderId: "1068288966027",
+            appId: "1:1068288966027:web:d17efc9cc331b98b10c38e"
+        };
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+
+        // Creamos el evento par el boton INICAR SESIÓN
+        document.getElementById("iniciar").addEventListener("click", function(){
+            const email1 = document.getElementById("email1").value;
+            const password1 = document.getElementById("password1").value;
+
+            signInWithEmailAndPassword(auth, email1, password1)
+            .then((userCredential) => {
+                // Signed in
+                const user = userCredential.user;
+                document.getElementById("mensaje").innerHTML = "Sesion iniciada!"
+                window.open("/bienvenido.html", "oficial")
+                // ...
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                document.getElementById("mensaje").innerHTML = "Ocurrio un error vuelva a colocar sus datos"
+            });
+        })
+
+        document.getElementById("atras").addEventListener("click", function(){
+            window.open("/index.html")
+        })
+    </script>
+</body>
+</html>

@@ -1,135 +1,85 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,maximum-scale=1.0, minimum.scale=1.0">
-    <title>WebSite JavaS</title>
-    <link rel="stylesheet" href="styles/barra_menu.css">
-    <link rel="stylesheet" href="styles/banner.css">
-    <link rel="stylesheet" href="styles/fontello.css">
-    <link rel="stylesheet" href="styles/contenido1.css">
-    <link rel="stylesheet" href="styles/contenido2.css">
-    <link rel="stylesheet" href="styles/footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/crear.css">
+    <title>Cuenta usuario</title>
 </head>
 <body>
-    <header>
-        <div class="contenedor">
-            <a href="index.html" class="java"><h2>JavaScript</h2></a>
-            <input type="checkbox" id="menubar">
-            <label for="menubar" class="icon-menu"></label>
+    <div class="contenedor">
+        <h1>Crear Cuenta</h1>
 
-            <nav>
-                <ul>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Practicas</a>
-                        <ul>
-                            <li><a href="/js/calculadora/calculadora.html">Calculadora</a></li>
-                            <li><a href="/js/carrusel/index.html">Carrusel de Imagenes</a></li>
-                        </ul></li>
-                    <li><a href="#">Ejercicios</a>
-                        <ul>
-                            <li><a href="/js/Suerte/index.html">Adivinar</a></li>
-                            <li><a href="/js/Cupon/index.html">Cupones</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    
-    <main>
+        <p>Somos "X-Store" una tienda informatica que con el tiempo a sabido posicionarse en el mercado peruano ya que la gente prefieren nuestros precios bajos. Para saber mas sobre nosotros cree una cuenta. Si ya creo su cuenta pulse el botón de siguiente <span>(La contraseña tiene que ser de 6 digitos)</span></p>
+        <p>Correo Electrónico</p>
 
-        <section class="banner">
-            <img src="img/java0000.jpg" alt="java">
-            <div class="contenedor">
-                <h2>¿Que es JavaScript?</h2>
-                <p>JavaScript es un lenguaje de programación o de secuencias de comandos que te permite implementar funciones complejas en páginas web, cada vez que una página web hace algo más que sentarse allí y mostrar información estática para que la veas, muestra oportunas actualizaciones de contenido, mapas interactivos, animación de Gráficos 2D/3D, desplazamiento de máquinas reproductoras de vídeo, etc.</p>
-            </div>
-        </section>
+        <input type="email" name="" id="email">
+
+        <p>Contraseña</p>
+        <input type="password" name="" id="password">
+
+        <button id="registrar">Crear Cuenta</button>
+        <p id="mensaje"></p>
+        
+    </div>
+
+    <div class="listo">
+        <a href="" id="listo">Siguiente</a>
+    </div>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-auth.js";
+        // import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAYA8n5MZrtkyylOyxvOzPfWR_urxovyaE",
+            authDomain: "clientes-fad7b.firebaseapp.com",
+            projectId: "clientes-fad7b",
+            storageBucket: "clientes-fad7b.appspot.com",
+            messagingSenderId: "1068288966027",
+            appId: "1:1068288966027:web:d17efc9cc331b98b10c38e"
+        };
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
 
 
-        <section class="contenido1">
+        // Creamos el evento para que funcione el boton
+        document.getElementById("registrar").addEventListener("click", function(){
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            createUserWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // Signed in
+                const user = userCredential.user;
+                console.log("Cuenta Creada")
+                document.getElementById("mensaje").innerHTML = "Cuenta creada"
+                // ...
+            })
             
-                <h1>Evolución de JavaScript</h1>
-                <p>JavaScript surgió como un lenguaje de script para mejorar las capacidades de la web de la época allá por 1995 por la extinta Netscape, JavaScript no ha dejado de evolucionar desde entonces. Originalmente el lenguaje se basaba a su vez basaba en CEnvi desarrollado a su vez por Nombas.
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                console.log(errorCode + errorMessage)
+                document.getElementById("mensaje").innerHTML = "Ocurrio un error vuelva a colocar sus datos"
+                // ..
+            }); 
+            })
 
-                Brendan Eich, un programador que trabajaba en Netscape, pensó que podría solucionar las limitaciones de la web de entonces, adaptando otras tecnologías existentes (como ScriptEase) al navegador Netscape Navigator 2.0, que iba a lanzarse en aquel año. Inicialmente, Eich denominó a su lenguaje LiveScript y fue un éxito.></p>
-                <div class="contenedor">
-                    <img src="img/eich.jpg" alt="">
-                </div>
-        </section>
+        
 
+            document.getElementById("listo").addEventListener("click", function(){
+                window.open("/iniciar.html")
+            })
 
-
-        <section class="contenido2">
-            <h1>Capas</h1>
-            <p>JavaScript es la tercera capa del pastel de las tecnologías web estándar, dos de las cuales (HTML y CSS) hemos cubierto con mucho más detalle en otras partes del Área de aprendizaje.</p>
-            <div class="contenedor">
-                <article>
-                    <img src="img/html.png" alt="html">
-                        <h1>HTML</h1>
-                    </img>
-                </article>
-
-                <article>
-                    <img src="img/css.png" alt="css">
-                        <h1>CSS</h1>
-                    </img>
-                </article>
-
-                <article>
-                    <img src="img/javascript.png" alt="javascript">
-                        <h1>JAVA</h1>
-                    </img>
-                </article>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <div class="footer-container">
-            <div class="footer-content-container">
-                <h3 class="website-logo">Josué - Sebastian</h3>
-                <span class="footer-info"></span>
-                <span class="footer-info">sebastian_mn15@hotmail.com</span>
-                <span class="footer-info">75068446@certus.edu.pe</span>
-            </div>
-            <div class="footer-menus">
-                <div class="footer-content-container">
-                    <span class="menu-title">menu</span>
-                    <a href="" class="menu-item-footer">Home</a>
-                    <a href="" class="menu-item-footer">Courses</a>
-                    <a href="" class="menu-item-footer">Testimonials</a>
-                </div>
-                <div class="footer-content-container">
-                    <span class="menu-title">legal</span>
-                    <a href="" class="menu-item-footer">Privacy Policy</a>
-                    <a href="" class="menu-item-footer">Cookies</a>
-                    <a href="" class="menu-item-footer">Legal Advice</a>
-                </div>
-            </div>
             
-            <div class="footer-content-container">
-                <span class="menu-title">follow us</span>
-                <div class="social-container">
-                    <a href="https://discord.com/channels/@me" class="social-link">
-                        <img src="/img/Discord.png" alt="" class="sigueme">
-                    </a>
-                    <a href="https://www.instagram.com/anuel/" class="social-link">
-                        <img src="/img/insta.png" alt="" class="sigueme">
-                    </a>
-                    <a href="https://www.facebook.com/josue.mamanich" class="social-link">
-                        <img src="/img/facebook.png" alt="" class="sigueme">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="copyright-container">
-            <span class="copyright">Copyright 2021 - All rights reserved.</span>
-        </div>
-    </footer>
-
+    </script>
 </body>
 </html>
