@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,maximum-scale=1.0, minimum.scale=1.0">    
     <title>X-Store</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/bienvenido.css">
+    <link rel="stylesheet" href="/styles/stylesPrincipal/bienvenido.css">
     <link rel="stylesheet" href="/styles/fontello.css">
-    <link rel="stylesheet" href="/styles/banner.css">
-    <link rel="stylesheet" href="/styles/content1.css">
-    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/stylesPrincipal/banner.css">
+    <link rel="stylesheet" href="/styles/stylesPrincipal/content1.css">
+    <link rel="stylesheet" href="/styles/stylesPrincipal/footer.css">
+    <link rel="stylesheet" href="/styles/stylesPrincipal/carrusel.css">
+    <link rel="stylesheet" href="/styles/stylesPrincipal/content3.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="icon" href="/img/x.png">
 </head>
 
 
 <body>
     <header >
         <div class="contenedor">
-            <h2>X-Store</h2>
+            <a href="/bienvenido.html"><img src="/img/xwhite.svg" alt="XS" id="logo__white"></a>
             <input type="checkbox" id="menubar">
-            <label for="menubar" class="icon-menu"></label>
+            <label for="menubar"><i class="bi bi-list"></i></label>
         
             <nav>
                 <ul>
                     <li><a href="#" id="register"><p>Registrarse</p></a></li>
-                    <li><a href="#footer">Pie de Pagina</a></li>
-                    <li><a href="#zowie">Zowie</a></li>
+                    <li><a href="/contacto.html">Contacto</a></li>
+                    <li><a href="/productos/index.html">Productos</a></li>
                     <li><a href="#banner">Bienvenido</a></li>
                 </ul>
             </nav>
@@ -35,7 +42,7 @@
 
     <main>
         <section class="banner" id="banner">
-            <video src="/img/video.mp4" autoplay muted loop></video>
+            <video src="/img/videogamer.mp4" autoplay muted loop></video>
             <div class="contenedor">
                 <h1>¡ Bienvenido !</h1>
                 <p>Somos X-Store la mejor tienda de informática en el Perú</p>
@@ -44,8 +51,8 @@
 
 
 
-        <div class="contenedor1" data-aos="fade-down">
-            <p>Arequipa - Perú⠀⠀⠀⠀27/06/2022</p>
+        <div class="contenedor1" >
+            <p>Arequipa - Perú⠀⠀⠀⠀08/07/2022</p>
         </div>
 
        <span id="zowie"></span>
@@ -58,9 +65,10 @@
                     <p>
                         Zowie es una marca que comenzó su carrera allá por el año 2008 y desde el principio se mostró tremendamente comprometida con los e-Sports.
                     </p>
-                    <p>
+                    <p id="segundo__parrafo">
                         En 2015, la empresa fue adquirida por BenQ, aunque eso no cambió en exceso su compromiso con los usuarios. Es por esto que hoy día Zowie sigue siendo uno de los nombres más relevantes en el mundo del gaming profesional.
                     </p>
+                    <a href="https://zowie.benq.com/en-ap/index.html">Conocer más...</a>
                 </div>
                 <img src="/img/zowie.png" alt="zowie">
             </div>
@@ -70,35 +78,149 @@
             <div class="contenedor">
                 <article class="EC">
                     <img src="/img/ec.png" alt="EC">
+                    <p class="precio">S/. 250</p>
                     <p>Serie EC</p>
                 </article>
                 <article class="FK">
                     <img src="/img/fk.png" alt="FK">
+                    <p class="precio">S/. 250</p>
                     <p>Serie FK</p>
                 </article>
                 <article class="ZA">
                     <img src="/img/za.png" alt="ZA">
+                    <p class="precio">S/. 250</p>
                     <p>Serie ZA</p>
                 </article>
                 
             </div>  
         </section>
 
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="/img/zowiefinal0000.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/img/hyperxfianl0000.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/img/gloriousfinal0000.jpg" alt="Third slide">
+                </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+
+            <section class="content2"  data-aos="zoom-in">
+                <div class="contenedor">
+                    <img src="/img/HyperXLogo.png" alt="HyperX" class="hyperx__logo">
+                        
+                    <div>
+                        <h1>HyperX</h1>
+                        <p>Apenas hay algo diferente en la apariencia del logotipo principal, excepto por la desaparición de la palabra «Kingston». Este movimiento fue puramente lógico, ya que, en 2012, la marca HyperX ya era lo suficientemente popular y ya no necesitaba el nombre de la empresa matriz para respaldar su estado.</p>
+                        <a href="https://www.hyperxgaming.com/latam">Conoce más...</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="hyperx__perifericos">
+                <div class="contenedor">
+                    <article>
+                        <img src="/img/AlloyOrigins60.png" alt="AO60">
+                        <p class="precio">S/. 387</p>
+                        <p>Alloy Origins 60</p>
+                    </article>
+
+                    <article>
+                        <img src="/img/AlloyOriginsCore.png" alt="AOCore">
+                        <p class="precio">S/. 319.90</p>
+                        <p>Alloy Origins Core</p>
+                    </article>
+
+                    <article>
+                        <img src="/img/AlloyOrigins.png" alt="AO">
+                        <p class="precio">S/. 353.98 </p>
+                        <p>Alloy Origins</p>
+                        
+                    </article>
+
+                </div>
+            </section>
+
+            <div class="division"></div>
+
+            
+
+
+            <section class="content3" data-aos="zoom-in">
+                <div class="contenedor">
+                    <div>
+                        <h1>Glorious PC Master Race</h1>
+                        <p>
+                            Glorious es una empresa de hardware de juegos de estilo de vida, creada por entusiastas apasionados con la misión de cambiar el status quo de una industria que creemos que necesita urgentemente una reorganización. Queremos ayudar a los jugadores entusiastas y profesionales a ascender en su 'estación de batalla' con equipos de la mejor calidad posible y precios razonables.</p>
+                        <a href="https://www.gloriousgaming.com">Conoce más...</a>
+                    </div>
+                    <img src="/img/pcmaster.jpg" alt="PCmaster" class="glorious__movil">
+                    <img src="/img/Pcmasterrace0000.jpg" alt="pcmaster" class="glorious__pc">
+                </div>
+            </section>
+
+            <section class="glorious__perifericos">
+                <div class="contenedor">
+                    <article>
+                        <img src="/img/GloriousModelO.png" alt="ModelO">
+                        <p class="precio">S/. 259</p>
+                        <p>Glorious Model O</p>
+                    </article>
+
+                    <article>
+                        <img src="/img/gmk.png" alt="GMMK">
+                        <p class="precio">S/. 539</p>
+                        <p>Glorious GMMK White</p>
+                    </article>
+
+                    <article>
+                        <img src="/img/BungeeGlorious.png" alt="bungee">
+                        <p class="precio">S/. 89</p>
+                        <p>Glorious Mouse Bungee</p>
+                    </article>
+
+                </div>
+            </section>
     </main>
 
-    <footer data-aos="fade-right" id="footer">
+
+
+
+
+
+
+
+
+
+
+    <footer id="footer">
         <div class="contenedor">
             <p class="copy">Josué Cesar Mamani Choque Web - 2022</p>
             <div class="sociales">
 
                 <a href="https://www.facebook.com/josue.mamanich" class="icon-facebook-official"></a>
 
-                <a href="#" class="icon-instagram"></a>
-                
+                <a href="#" class="icon-instagram" ></a>
+
             </div>
+
         </div>
     </footer>
 
+    
 
 
 
@@ -122,24 +244,27 @@
 
 
 
-
+    <script>
+        $('.carousel').carousel()
+      </script>
+      
 
 
     <script type="module">
         // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
-        import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js";
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+        import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-auth.js";
         // TODO: Add SDKs for Firebase products that you want to use
         // https://firebase.google.com/docs/web/setup#available-libraries
       
         // Your web app's Firebase configuration
         const firebaseConfig = {
-          apiKey: "AIzaSyAYA8n5MZrtkyylOyxvOzPfWR_urxovyaE",
-          authDomain: "clientes-fad7b.firebaseapp.com",
-          projectId: "clientes-fad7b",
-          storageBucket: "clientes-fad7b.appspot.com",
-          messagingSenderId: "1068288966027",
-          appId: "1:1068288966027:web:d17efc9cc331b98b10c38e"
+            apiKey: "AIzaSyBUdvuHDauOlX7tFMwyBLLZGkKZadRUCCk",
+            authDomain: "x-store-88318.firebaseapp.com",
+            projectId: "x-store-88318",
+            storageBucket: "x-store-88318.appspot.com",
+            messagingSenderId: "698918610514",
+            appId: "1:698918610514:web:9f617968b4a3fb1d95618b"
         };
       
         // Initialize Firebase
@@ -147,13 +272,30 @@
         const auth = getAuth(app);
 
         document.getElementById("register").addEventListener("click", function(){
-                window.open("/index.html")
-           
+            swal({
+                title: "¡ Estas apunto a punto de salir de la página principal !",
+                text: "Presiona el boton OK si quieres registrarte.",
+                icon: "warning",
+                buttons: true,
+                })
+
+                .then((willDelete) => {
+                if (willDelete) {
+                    window.open("/registrar.html")    
+                } 
+                else { 
+                }
+                });
         })
       </script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      
       <script>
         AOS.init();
       </script>
+      
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+.contenedor1{
+    text-align: center;
+    font-size: 14px;
+    padding: 50px;
+}
+
+.content1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.content1 h1 {
+    margin:20px 0px;
+}
+.content1 p {
+    margin:20px 0px;
+    padding: 0px 20px;
+}
+
+.content1 img {
+    display: none;
+}
+.content1 a{
+    border: 2px solid black;
+
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+    padding: 5px 10px;
+    font-size: 14px;
+
+}
+
+
+/* ================================================ */
+.zowie{
+    margin-top: 50px;
+}
+.zowie .contenedor {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.zowie .contenedor article img{
+    width: 340px;
+    transition: all .5s;
+}
+
+.zowie .contenedor article p{
+    font-size: 30px;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.zowie .contenedor article img:hover {
+    transform: scale(120%);
+
+}   
+
+.zowie .contenedor article img:hover ~ p{
+    opacity: 1;
+}
+
+.zowie .contenedor article .precio{
+    font-size: 17px;
+    font-weight: bold;
+    color: red;
+
+}
+
+
+
+
+@media screen and (min-width:1024px) {
+    .content1 {
+        margin-top: 150px;
+        
+    }
+
+    .content1 h1{
+        margin-bottom: 40px;
+    }
+    .content1 p{
+        padding: 0px 100px;
+        font-size: 18px;
+
+    }
+    .content1 #segundo__parrafo{
+    
+        margin-bottom: 50px;
+    }
+
+    .content1 img{
+        display: inline;
+        width: 100px;
+        height: 100px;
+        margin-top: 120px;
+
+    }
+    .content1 .contenedor{
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        width: 1000px;
+    }
+
+    .contenedor1{
+        text-align: left;
+        font-size: 20px;
+        padding: 50px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.247);
+        width: 1000px;
+        margin:auto;
+        margin-top: 100px;        
+    }
+
+
+    
+
+}
+

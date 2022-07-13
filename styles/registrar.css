@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Urbanist', sans-serif;
+    background: linear-gradient(200deg,rgb(36, 36, 36),rgb(0, 0, 0));
+    background-size: 500%;
+    overflow-y: hidden;
+    animation: fondo 4s infinite;
+}
+
+@keyframes fondo{
+    0%{
+        background-position: 0%;
+    }
+    50%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0%;
+    }
+}
+
+.XS {
+    width: 60px;
+    margin: 20px;
+    float: left;
+}
+.modal-dialog {
+    padding-top: 9%;
+}
+
+.text__content {
+    padding-top: 20px;
+}
+.text__content h1{
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+.text__content p{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.text__down {
+    margin: 30px 0;
+}
+#boton {
+    margin-top: 30px;
+    color: aliceblue;
+    background-color: rgb(22, 22, 22);
+}
+svg{
+    margin-top: -130px;
+
+}
+
+
+.swal-overlay {
+    background-color: rgba(20, 20, 20, 0.959);
+}
+
+.swal-title {
+    font-size: 31px;
+}
+.swal-text {
+    font-size: 24px;
+}

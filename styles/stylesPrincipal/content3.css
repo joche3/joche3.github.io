@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.content3 .contenedor {
+    text-align: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.content3 .contenedor h1{
+    margin-bottom: 40px;
+
+}
+.content3 .contenedor p{
+    margin-bottom: 40px;
+    padding: 0px 20px;
+}
+
+.content3 .contenedor .glorious__movil{
+    width: 330px;
+    margin-top: 60px;
+}
+.content3 .contenedor .glorious__pc{
+    display: none;
+}
+
+.content3 .contenedor a{
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+    padding: 5px 10px;
+    font-size: 14px;
+
+}
+
+
+
+/* =====Glorious__Perifericos=== */
+
+.glorious__perifericos {
+    margin-top: 100px;
+}
+
+.glorious__perifericos .contenedor {
+    text-align: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.glorious__perifericos .contenedor img {
+    width: 300px;
+    transition: all .5s;
+}
+
+.glorious__perifericos .contenedor p{
+    margin-top: 40px;
+    font-size: 25px;
+    transition: all .5s;
+    opacity: 0;
+}
+
+.glorious__perifericos .contenedor img:hover {
+    transform: scale(120%);
+}
+.glorious__perifericos .contenedor img:hover ~ p {
+    opacity: 1;
+}
+
+
+
+.glorious__perifericos .contenedor .precio {
+    font-size: 17px;
+    color: red;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:1024px) {
+    
+    .content3 .contenedor {
+        margin: auto;
+        width: 1000px;
+
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .content3 .contenedor div{
+        z-index: 100;
+    }
+    .content3 .contenedor img{
+        width: 600px;
+        margin-left: -200px;
+        margin-top: -10px;
+    }
+    .content3 .contenedor p{
+        font-size: 18px;
+    }
+
+    .content3 .contenedor .glorious__movil{
+        display: none;
+    }
+    .content3 .contenedor .glorious__pc{
+        display: block;
+    }
+
+
+}

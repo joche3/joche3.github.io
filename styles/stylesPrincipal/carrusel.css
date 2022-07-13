@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.carousel{
+    margin-top: 70px;
+}
+.hyperx__logo {
+    display: none;
+}
+
+
+.content2 {
+    margin-top: 60px;
+}
+.content2 .contenedor{
+    text-align: center;
+    margin: auto;
+}
+
+.content2 .contenedor p{
+    padding: 0px 20px;
+}
+
+.content2 .contenedor a{
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+/* ====Hyperx__Perifericos__Imagenes */
+
+.hyperx__perifericos {
+    margin-top: 100px;
+}
+
+.hyperx__perifericos .contenedor{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hyperx__perifericos .contenedor img{
+    width: 330px;
+    transition: all .5s;
+}
+.hyperx__perifericos .contenedor p{
+    margin-top: 40px;
+    font-size: 25px;
+    transition: all .5s;
+    opacity: 0;
+}
+
+.hyperx__perifericos .contenedor img:hover{
+    transform: scale(120%);
+}
+
+.hyperx__perifericos .contenedor img:hover ~ p {
+    opacity: 1;
+}
+
+.hyperx__perifericos .contenedor article .precio {
+    font-size: 17px;
+    color: red;
+    font-weight: bold;
+}
+
+
+
+
+
+
+@media screen and (min-width:1024px){
+    .carousel{
+        margin-top: 170px;
+    }
+    .content2 {
+        margin-top: 100px;
+    }
+    .content2 .contenedor{
+        width: 1000px;
+        display: flex;
+    }
+    .content2 .contenedor img {
+        display: block;
+        width: 200px;
+        height: 150px;
+        margin-top: 50px;
+    }
+
+    .content2 .contenedor h1{
+        margin-bottom: 30px
+    }
+
+    .content2 .contenedor  p{
+        padding: 0px 100px;
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    /* ====Hyperx__Perifericos__Imagenes */
+
+    .hyperx__perifericos .contenedor img{
+        width: 415px;
+    }
+
+    .division {
+        border-top: 2px solid black;
+        width: 1000px;
+        margin: 110px auto 70px;
+        border-color: rgba(0, 0, 0, 0.103)
+    }
+    
+}

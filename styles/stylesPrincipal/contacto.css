@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.texto__principal {
+
+    padding: 10px;
+
+}
+.texto__principal p {
+    font-size: 18px;
+}
+.texto__principal h1 {
+    margin-top: 160px;
+}
+
+
+
+.linea {
+    border-top: 2px solid black;
+
+}
+
+.contacto {
+    margin-top: 70px;
+}
+
+
+
+
+
+.contacto .oficina .bi-house {
+    font-size: 200px;
+    color: black;
+}
+.contacto .numero .bi-chat {
+    font-size: 200px;
+    color: black;
+}
+.contacto .mail .bi-envelope {
+    font-size: 200px;
+    color: black;
+}
+
+
+
+
+.contacto .contenedor p{
+    font-size: 20px;
+}
+
+.contacto .contenedor .titulo {
+    font-weight: bold;
+    color: darkred;
+}
+
+.contacto .contenedor {
+    text-align: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 100px;
+}
+
+
+
+
+@media screen and (min-width:1024px) {
+    .contenedor {
+        gap: 200px;
+    }
+
+    .texto__principal {
+        width: 1000px;
+        margin: auto;
+    }
+
+    .linea {
+        width: 1000px;
+        margin: auto;
+    }
+
+}
+
+

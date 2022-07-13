@@ -1,85 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" > 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/crear.css">
-    <title>Registrar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="icon" href="/img/x.png">
+    <title>Iniciar Sesión</title>
 </head>
-<body>
-    <div class="contenedor">
-        <h1>Crear Cuenta</h1>
 
-        <p>Somos "X-Store" una tienda informática que con el tiempo a sabido posicionarse en el mercado peruano ya que la gente prefieren nuestros precios bajos. Para saber mas sobre nosotros cree una cuenta. Si ya creo su cuenta pulse el botón de siguiente <span>(La contraseña tiene que ser de 6 digitos)</span></p>
-        <p>Correo Electrónico</p>
+<body>  
+    <img src="/img/xwhite.svg" alt="XS" class="XS"> 
 
-        <input type="email" name="" id="email">
+    <div class="modal-dialog text-center">
+        <div class="col-sm-12" >
+            <div class="modal-content">
+                <div class="col-12 text__content">
+                    <h1>Iniciar Sesión</h1>
+                    <p>X-Store tienda de informática</p>
+                </div>
+                
+                <form class="col-12">
+                    <div class="form-group"  id="user-group ">
+                        <input type="text" class="form-control" placeholder="Correo Electronico" id="email">
+                    </div>
 
-        <p>Contraseña</p>
-        <input type="password" name="" id="password">
+                    <div class="form-group"  id="contrasena-group">
+                        <input type="password" class="form-control" placeholder="Contraseña" id="password">
+                    </div>
 
-        <button id="registrar">Crear Cuenta</button>
-        <p id="mensaje"></p>
+                    <a type="submit" class="btn btn-secondary" id="boton"><i class="bi bi-box-arrow-right"></i>
+                    Ingresar</a> 
+                </form>
+
+                <div class="col-12 text__down">
+                    <span class="no_cuenta">¿No cuentas con una cuenta?</span>
+                    <a href="#" id="registrarse">Registrarse</a>
+                </div>
+            </div>
+        </div>
         
     </div>
 
-    <div class="listo">
-        <a href="" id="listo">Siguiente</a>
-    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,32L80,58.7C160,85,320,139,480,149.3C640,160,800,128,960,106.7C1120,85,1280,75,1360,69.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+
+
+
+
+
 
     <script type="module">
         // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
-        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-auth.js";
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+        import { getAuth, signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.9.0/firebase-auth.js";
         // import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-auth.js";
         // TODO: Add SDKs for Firebase products that you want to use
         // https://firebase.google.com/docs/web/setup#available-libraries
 
         // Your web app's Firebase configuration
         const firebaseConfig = {
-            apiKey: "AIzaSyAYA8n5MZrtkyylOyxvOzPfWR_urxovyaE",
-            authDomain: "clientes-fad7b.firebaseapp.com",
-            projectId: "clientes-fad7b",
-            storageBucket: "clientes-fad7b.appspot.com",
-            messagingSenderId: "1068288966027",
-            appId: "1:1068288966027:web:d17efc9cc331b98b10c38e"
+            apiKey: "AIzaSyBUdvuHDauOlX7tFMwyBLLZGkKZadRUCCk",
+            authDomain: "x-store-88318.firebaseapp.com",
+            projectId: "x-store-88318",
+            storageBucket: "x-store-88318.appspot.com",
+            messagingSenderId: "698918610514",
+            appId: "1:698918610514:web:9f617968b4a3fb1d95618b"
         };
-        // Initialize Firebase
+
         const app = initializeApp(firebaseConfig);
         const auth = getAuth(app);
 
-
-        // Creamos el evento para que funcione el boton
-        document.getElementById("registrar").addEventListener("click", function(){
+        document.getElementById("boton").addEventListener("click", function(){
             const email = document.getElementById("email").value;
             const password = document.getElementById("password").value;
-
-            createUserWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
-                // Signed in
-                const user = userCredential.user;
-                console.log("Cuenta Creada")
-                document.getElementById("mensaje").innerHTML = "Cuenta creada"
-                // ...
-            })
             
+            signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+              // Signed in
+                const user = userCredential.user;
+                swal({
+                    title:"Inicio de Sesión satisfactorio",
+                    text:" Presione el boton OK para ir a la página principal",
+                    icon: "success",
+                    buttons: true,
+                })
+                .then((willDelete) => {
+                    if (willDelete) {
+                        window.open("/bienvenido.html")    
+                    } 
+                    else { 
+                    }
+                    });
+            })
             .catch((error) => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
-                console.log(errorCode + errorMessage)
-                document.getElementById("mensaje").innerHTML = "Ocurrio un error vuelva a colocar sus datos"
-                // ..
-            }); 
+                console.log("error")
+                swal({
+                    title:"Ocurrio un error vuelva a colocar sus datos",
+                    text:"Probablemente la cuenta que colocó no existe.",
+                    icon: "warning",
+                })
+            });
+
             })
 
-        
-
-            document.getElementById("listo").addEventListener("click", function(){
-                window.open("/iniciar.html")
+            document.getElementById("registrarse").addEventListener("click", function(){
+                window.open("/registrar.html")
             })
-
-            
     </script>
 </body>
 </html>
+
